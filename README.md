@@ -71,7 +71,7 @@ The `pages` folder for the actual style guide output. Each audience has its own 
 
 > **NOTE:** The `^[AUDIENCE].index.md` files start with a caret so that the index file will appear first alphabetically (because it's convenient when it's at the top of the list). The caret doesn't serve an actual purpose, Jekyll-wise.
 
-* For example, `pages/mktg/grammar.md` generates a page you can visit at https://alexakreizinger.com/styleguidetemplate/mktg/grammar/. 
+* For example, `pages/mktg/grammar.md` generates a page you can visit at https:/alexakreizinger.github.io/styleguidetemplate/mktg/grammar/. 
 
 * The page itself pulls data from `_data/stylerules/grammar.yml`. It does this by using `include` to call upon the `get_rules_for_audience.md` (where the filename is `site.data.stylerules.grammar` and the audience is `mktg`).
 
@@ -81,7 +81,7 @@ The `pages` folder for the actual style guide output. Each audience has its own 
 * audience: `all` (see note below)
 * url: `all`
 * title: All
-* (semi-secret; hidden from nav and search, but accessible by visiting https://alexakreizinger.com/styleguidetemplate/all/)
+* (semi-secret; hidden from nav and search, but accessible by visiting https://alexakreizinger.github.io/styleguidetemplate/all/)
 #### **Developers**
 * audience: `dev`
 * url: `/dev/`
