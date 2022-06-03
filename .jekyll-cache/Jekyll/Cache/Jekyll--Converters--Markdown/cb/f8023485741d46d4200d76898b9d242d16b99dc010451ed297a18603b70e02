@@ -1,0 +1,24 @@
+I"<h1 id="style-guide-template">Style Guide Template</h1>
+<p>A Jekyll-based style guide with single-sourcing across multiple audiences. Built by <a href="https://alexakreizinger.com/">Alexa Kreizinger</a>.</p>
+
+<p><strong>Note:</strong> References to actual company names and product guidelines have been replaced with references to Aperture Science, a fictional organization from the Portal universe. Thank you for helping us help you help us all.</p>
+
+<h2 id="why-this-exists">Why this exists</h2>
+
+<p>Style guides an excellent, vital resource for any organization—but what happens when you have multiple style guides for different audiences?</p>
+
+<p>Rules that apply to someone designing a user interface, for example, may not apply to someone writing press releases, so it doesn’t make sense to use a single style guide for both. On the other hand, other rules certainly <em>will</em> apply to both audiences, and it can be tough to keep these rules in sync if they’re sourced from different guides.</p>
+
+<p>This style guide template strikes a balance between the need to differentiate rules between different ty</p>
+
+<h2 id="how-it-works">How it works</h2>
+
+<ul>
+  <li>
+    <p>Everything generated automatically as much as possible–after you’ve set up the pages with the correct variables and include functions, you only ever need to edit the style rule YAML files directly, not individual audience pages</p>
+  </li>
+  <li>
+    <p>Designed to scale, regardless of whether you have three audiences or thirty audiences</p>
+  </li>
+</ul>
+:ET

@@ -1,0 +1,85 @@
+I"�<h1 class="no_toc" id="company-terminology">Company Terminology</h1>
+<details>
+  <summary class="text-delta">
+    Table of contents
+  </summary>
+<ul id="markdown-toc">
+  <li><a href="#branding" id="markdown-toc-branding">Branding</a>    <ul>
+      <li><a href="#capitalize-human" id="markdown-toc-capitalize-human">Capitalize HUMAN<br /></a></li>
+      <li><a href="#product-names" id="markdown-toc-product-names">Product names<br /></a></li>
+      <li><a href="#internal-vs-external-names" id="markdown-toc-internal-vs-external-names">Internal vs. external names<br /></a></li>
+    </ul>
+  </li>
+  <li><a href="#other-terminology" id="markdown-toc-other-terminology">Other terminology</a>    <ul>
+      <li><a href="#human-doesnt-block" id="markdown-toc-human-doesnt-block">HUMAN doesn’t block<br /></a></li>
+      <li><a href="#bots-arent-always-bad" id="markdown-toc-bots-arent-always-bad">Bots aren’t always bad<br /></a></li>
+      <li><a href="#signals-vs-data" id="markdown-toc-signals-vs-data"><em>Signals</em> vs. <em>data</em><br /></a></li>
+      <li><a href="#words-to-avoid" id="markdown-toc-words-to-avoid">Words to avoid<br /></a></li>
+    </ul>
+  </li>
+</ul>
+
+</details>
+
+<p>Guidelines about what makes us HUMAN.</p>
+
+<h2 id="branding">Branding</h2>
+
+<h3 id="capitalize-human">Capitalize HUMAN<br /></h3>
+<p>The name of our company is <strong>HUMAN</strong> or <strong>HUMAN Security</strong>.</p>
+
+<h3 id="product-names">Product names<br /></h3>
+<p>Our product offerings include <strong>MediaGuard</strong>, <strong>FraudSensor</strong>, <strong>BotGuard for Growth Marketing</strong>, <strong>Botguard for Applications</strong>, and <strong>the HUMAN Mobile SDK</strong>.</p>
+
+<p>Don’t abbreviate HUMAN’s product names in public-facing documentation.<br /></p>
+
+<ul>
+  <li>
+    <p><strong>No:</strong> BGforA protects your website or application from bots.</p>
+  </li>
+  <li>
+    <p><strong>Yes:</strong> BotGuard for Applications protects your website or application from bots.</p>
+  </li>
+</ul>
+
+<h3 id="internal-vs-external-names">Internal vs. external names<br /></h3>
+<p>Unless you’re referring to a specific function or piece of code that includes an internal codename, always use external names in public-facing documentation.</p>
+
+<ul>
+  <li>
+    <p>Instead of Vesper, say <strong>the Mitigation API</strong>.</p>
+  </li>
+  <li>
+    <p>Instead of Draco, say <strong>the HUMAN Mobile SDK</strong>.</p>
+  </li>
+</ul>
+
+<h2 id="other-terminology">Other terminology</h2>
+
+<h3 id="human-doesnt-block">HUMAN doesn’t block<br /></h3>
+<p>HUMAN’s products don’t directly block traffic; we merely <em>analyze</em> traffic and return our recommendation for how the user should respond. It’s up to our users to act on that recommendation.<br /></p>
+
+<p>As such, be careful not to imply that HUMAN’s products block traffic (or take any kind of action at all). Instead, emphasize that we provide a recommendation, often in the form of an actionable data point, which users can then choose whether to incorporate into their own workflows.</p>
+
+<ul>
+  <li>
+    <p><strong>NO!!!:</strong> The Mitigation API will block all events that were classified as bots.</p>
+  </li>
+  <li>
+    <p><strong>Yes:</strong> The Mitigation API will return a <code class="language-plaintext highlighter-rouge">block</code> response for all events that were classified as bots.</p>
+  </li>
+</ul>
+
+<h3 id="bots-arent-always-bad">Bots aren’t always bad<br /></h3>
+<p>Don’t use the word <em>bot</em> to mean <em>bad bot</em>; if you’re referring to a bad bot, use a descriptive adjective like <em>bad</em> or <em>malicious</em>. Similarly, if you’re referring to a good or neutral bot, use a descriptive adjective like <em>benign</em> or <em>helpful</em>.</p>
+
+<h3 id="signals-vs-data"><em>Signals</em> vs. <em>data</em><br /></h3>
+<p>The phrase <em>collect signals</em> is preferable to the phrase <em>collect data</em> (since the latter often has unfortunate implications).</p>
+
+<h3 id="words-to-avoid">Words to avoid<br /></h3>
+<ul>
+  <li>Don’t refer to hackers as <em>white hat</em> or <em>black hat</em>.</li>
+  <li>Don’t use words like <em>blacklist</em> or <em>whitelist</em>; instead, say <em>deny list</em> or <em>allow list</em>.</li>
+</ul>
+
+:ET

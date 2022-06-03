@@ -1,0 +1,32 @@
+I"<h1 id="aks-style-guide-template">AK’s Style Guide Template</h1>
+<p>A Jekyll-based style guide with single-sourcing across multiple audiences, built by <a href="https://alexakreizinger.com/">Alexa Kreizinger</a>.</p>
+
+<p><strong>Note:</strong> Various company names and product guidelines have been replaced with references to Aperture Science, a fictional organization from the <em>Portal</em> universe. Thank you for helping us help you help us all.</p>
+
+<h2 id="why-this-exists">Why this exists</h2>
+
+<p>Style guides an excellent, vital resource for any organization—but what happens when you need to maintain multiple style guides for different audiences?</p>
+
+<p>Rules that apply to someone designing a user interface, for example, may not apply to someone writing press releases, so it doesn’t make sense to use a single style guide for both. On the other hand, other rules certainly <em>will</em> apply to both audiences, and it can be tough to keep these rules in sync if they’re sourced from entirely separate guides.</p>
+
+<p>This template strikes a balance between the need to maintain discrete rules for separate audiences with the need to unify rules that apply to one or more audiences. Although certain style rules appear multiple times throughout this guide, each rule was only recorded in a single location; by using a tagging system, each rule is automatically populated in the relevant sections for any applicable audience (i.e., <a href="/dev">Developers</a>, <a href="/mktg">Marketers</a>, and/or <a href="/tw">Technical Writers</a>. As such, if you ever need to update, expand, or delete a rule, you only need to edit the rule’s source file instead of painstakingly editing three separate sections.</p>
+
+<p>This template is also designed to be scalable, regardless of whether you have three audiences or thirty. Since all of its content is auto-generated whenever possible, adding more audiences is as easy as appending the correct tags to any applicable style rules and creating new pages with the correct Liquid syntax.</p>
+
+<h2 id="how-it-works">How it works</h2>
+
+<p>TL;DR: A combination of YAML files, <code class="language-plaintext highlighter-rouge">include</code> tags, and Liquid variables that essentially turn your style ruleset into a mini database.</p>
+
+<p>All of the content in this template is auto-generated whenever possible. The actual content of the style guide is stored in a series of YAML files (in the <code class="language-plaintext highlighter-rouge">_data/stylerules/</code> directory) and tagged with various audiences.</p>
+
+<p>After you’ve set up your site’s .md pages with the correct variables and include functions, you</p>
+
+<ul>
+  <li>
+    <p>Everything generated automatically as much as possible–after you’ve set up the pages with the correct variables and include functions, you only ever need to edit the style rule YAML files directly, not individual audience pages</p>
+  </li>
+  <li>
+    <p>Designed to scale, regardless of whether you have three audiences or thirty audiences</p>
+  </li>
+</ul>
+:ET

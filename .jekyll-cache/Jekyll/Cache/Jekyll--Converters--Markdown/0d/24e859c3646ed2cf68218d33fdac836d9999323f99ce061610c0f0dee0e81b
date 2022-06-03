@@ -1,0 +1,45 @@
+I"8<h1 class="no_toc" id="company-terminology">Company Terminology</h1>
+<details>
+  <summary class="text-delta">
+    Table of contents
+  </summary>
+<ul id="markdown-toc">
+  <li><a href="#branding" id="markdown-toc-branding">Branding</a>    <ul>
+      <li><a href="#product-names" id="markdown-toc-product-names">Product names<br /></a></li>
+    </ul>
+  </li>
+  <li><a href="#other-terminology" id="markdown-toc-other-terminology">Other terminology</a>    <ul>
+      <li><a href="#words-to-avoid" id="markdown-toc-words-to-avoid">Words to avoid<br /></a></li>
+    </ul>
+  </li>
+</ul>
+
+</details>
+
+<p>Guidelines about company-specific terminology.</p>
+
+<h2 id="branding">Branding</h2>
+
+<h3 id="product-names">Product names<br /></h3>
+<p>Our product offerings include <strong>MediaGuard</strong>, <strong>FraudSensor</strong>, <strong>BotGuard for Growth Marketing</strong>, <strong>Botguard for Applications</strong>, and <strong>the HUMAN Mobile SDK</strong>.</p>
+
+<p>Don’t shorten Aperture Science’s product names in public-facing documentation.<br /></p>
+
+<ul>
+  <li>
+    <p><strong>No:</strong> BGforA protects your website or application from bots.</p>
+  </li>
+  <li>
+    <p><strong>Yes:</strong> BotGuard for Applications protects your website or application from bots.</p>
+  </li>
+</ul>
+
+<h2 id="other-terminology">Other terminology</h2>
+
+<h3 id="words-to-avoid">Words to avoid<br /></h3>
+<ul>
+  <li>Don’t refer to test subjects as <em>guinea pigs</em> or <em>lab rats</em>. Instead, be sure to reassure all test subjects that they are active participants in the scientific process and possess far greater cognitive faculties than your average rodent.</li>
+  <li>Don’t use words like <em>experiment</em> or <em>unaccredited clinical trial</em>; instead, say <em>test</em> or <em>Aperture Science Data Collection Session</em>.</li>
+</ul>
+
+:ET

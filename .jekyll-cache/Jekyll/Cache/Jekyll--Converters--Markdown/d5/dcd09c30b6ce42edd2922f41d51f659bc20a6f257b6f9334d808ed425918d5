@@ -1,0 +1,44 @@
+I"�<h1 id="aks-style-guide-template">AK’s Style Guide Template</h1>
+<p>A Jekyll-based style guide with single-sourcing across multiple audiences, built by <a href="https://alexakreizinger.com/">Alexa Kreizinger</a>.</p>
+
+<p>Please note that various company names and product guidelines have been replaced with references to Aperture Science, a fictional organization from the <em>Portal</em> universe. Thank you for helping us help you help us all.</p>
+
+<h2 id="why-this-exists">Why this exists</h2>
+
+<p>Style guides an excellent, vital resource for any organization—but what happens when you need to maintain multiple style guides for different audiences?</p>
+
+<p>Rules that apply to someone designing a user interface, for example, may not apply to someone writing press releases, so it doesn’t make sense to use a single style guide for both. On the other hand, other rules certainly <em>will</em> apply to both audiences, and it can be tough to keep these rules in sync if they’re sourced from entirely separate guides.</p>
+
+<p>This template strikes a balance between the need to maintain discrete rules for separate audiences with the need to unify rules that apply to one or more audiences. Although certain style rules appear multiple times throughout this guide, each rule was only recorded in a single location; by using a tagging system, each rule is automatically populated in the relevant sections for any applicable audience (i.e., <a href="/dev">Developers</a>, <a href="/mktg">Marketers</a>, and/or <a href="/tw">Technical Writers</a>. As such, if you ever need to edit or delete a rule, you only need to edit the rule’s source file instead of painstakingly editing the three separate sections where it could possibly appear.</p>
+
+<p>This template is also designed to be scalable, regardless of whether you have three audiences or thirty.</p>
+
+<h2 id="how-it-works">How it works</h2>
+
+<p>TL;DR: A combination of YAML files, <code class="language-plaintext highlighter-rouge">include</code> tags, and Liquid variables that essentially turn your style ruleset into a mini database. (This is somehow both more complicated and less complicated than it sounds, but don’t worry—I’ve already brute-forced my way through Jekyll’s idiosyncrasies so you don’t have to.)</p>
+
+<p><strong>Style rules and YAML:</strong> Lists of style rules are stored in a series of YAML files in the <code class="language-plaintext highlighter-rouge">_data/stylerules/</code> directory. For example, a basic rule file called <code class="language-plaintext highlighter-rouge">punctuation.yml</code> might look like this:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>description: Rules about punctuation.
+
+rules:
+- section: Semicolons
+  topics:
+
+  - rule: |
+      ### Avoid overuse&lt;br&gt;
+      Semicolons are your friend; however, like any friend, you might get sick of them if they show up too frequently. Tread carefully and wisely.
+    audience: [tw, dev, mktg]
+
+  - rule: |
+      ### Clauses&lt;br&gt;
+      You can use a semicolon to connect two independent clauses.
+    examples:
+      - |
+        **Example:** The film received terrible reviews; none of the reviewers could even stay awake through the whole thing.
+    audience: [tw, mktg]
+</code></pre></div></div>
+<p>There’s a lot going on here, but the most important thing to note so far is the <code class="language-plaintext highlighter-rouge">audience</code> key. The first rule has the <code class="language-plaintext highlighter-rouge">tw</code>, <code class="language-plaintext highlighter-rouge">mktg</code>, and <code class="language-plaintext highlighter-rouge">dev</code> tags, corresponding to Technical Writers, Developers, and Marketers, respectively. The second rule, on the other hand, only applies to Technical Writers and Marketers.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">include</code> files:</strong></p>
+
+:ET

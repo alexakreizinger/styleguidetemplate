@@ -1,0 +1,67 @@
+description: Guidelines about what to say and how to say it.
+
+rules:
+- section: Aperture Science products
+  topics:
+
+  - rule: |
+      ### Latency and uptime<br>
+      Don't make specific promises about latency, uptime, or related topics in public-facing documentation. These details should be reserved for SLAs and contracts.
+    audience: [tw, dev]
+
+  - rule: |
+      ### Unrealistic claims<br>
+      Don't make unsubstantiated or unrealistic claims about Aperture Science, including who we are, what we do, the services we offer, or how our products work. 
+    audience: [tw, dev, mktg]
+
+  - rule: |
+      ### Unreleased products<br>
+      Don't mention unreleased products or features in public-facing documentation. 
+    audience: [tw, dev]
+
+- section: Tone
+  topics:
+
+  - rule: |
+      ### Be friendly<br>
+      Strive for an approachable, friendly tone—polished, professional, but not excessively formal. 
+    audience: [tw, dev, mktg]
+    featured: |
+      [Strive for an approachable, friendly tone.]({{site.baseurl}}{{page.permalink}}tone-and-content/#be-friendly)
+
+  - rule: |
+      ### Write for non-experts<br>
+      Write in a way that's easy for most people to understand, even if the reader isn't an expert in a given topic. A good rule of thumb: estimate the expertise of your average reader, then write for an audience with slightly less expertise than that.
+    audience: [tw, dev, mktg]
+    featured: |
+      [Write for a broad audience, not just for experts.]({{site.baseurl}}{{page.permalink}}tone-and-content/#write-for-non-experts)
+
+- section: Word choice
+  topics:
+
+  - rule: |
+      ### Filler words<br>
+      Avoid filler words like *very.* Rather than describing a task as *very important*, you might say that it's *critical*. 
+    audience: [tw, dev, mktg]
+    featured: |
+      [Avoid filler words.]({{site.baseurl}}{{page.permalink}}tone-and-content/#filler-words)
+
+  - rule: |
+      ### Simple vs. complex<br>
+      When possible, try to use short, simple words instead of complex, abstract words.
+    examples:
+      - |
+        **Weak:** This setting facilitates data filtering.
+      - |
+        **Strong:** This setting lets you filter data.
+    audience: [tw, dev, mktg]
+    featured: |
+      [Try to use short, simple words instead of complex, abstract words.]({{site.baseurl}}{{page.permalink}}tone-and-content/#simple-vs.-complex)
+
+  - rule: |
+      However, if there's no way to avoid using complicated words or technical jargon, it's often helpful to give a definition, include [a hyperlink]({{site.baseurl}}{{page.permalink}}formatting-and-organization/#links) to related materials, or provide other additional context.
+    examples:
+      - |
+        **Example:** Be careful not to cross the black hole's event horizon. An event horizon is the point at which an object's gravity becomes too strong to escape—if you cross the event horizon, you'll never come back.
+    audience: [tw, dev, mktg]
+

@@ -1,0 +1,390 @@
+description: Guidelines for how to arrange and present the words you write.
+
+rules:
+- section: Callout boxes
+  topics:
+
+  - rule: |
+      ### Callout types<br>
+      Callout boxes (sometimes known as *admonitions*) are a great way to highlight important information or notices. There are three main types of callout boxes:
+    examples:
+      - |
+        **Info/Note:** A useful (but not urgent) message. Notes often provide clarifying information, tips and tricks, or additional advice.
+      - |
+        **Caution/Careful:** An important, semi-urgent message. Caution notes often invite the reader to slow down or tread carefully.
+      - |
+        **Warning/Danger:** A critical, urgent message. Wargent notes often contain information that will lead to a serious error if not followed; readers must heed this message at all costs.
+    audience: [tw, dev]
+
+  - rule: |
+      ### Callout frequency<br>
+      Don't use an excessive number of callout boxes in a single document, and try not to use two callout boxes consecutively with no intervening text between them (if you can avoid it).
+    audience: [tw]
+
+  - rule: |
+      ### Keep callouts short<br>
+      Try not to use callout boxes that contain long walls of text.
+    audience: [tw]
+
+- section: Capitalization
+  topics:
+
+  - rule: |
+      ### Aperture Science branding<br>
+      Make sure to properly capitalize Aperture Science's product names.<br> 
+
+      For more information, see [Aperture Science's brand guidelines]({{site.baseurl}}/{{page.audience}}/company-terminology/#brand-guidelines).
+    audience: [tw, dev, mktg]
+
+  - rule: |
+      However, don't capitalize the names of product features or processes unless the feature or process in question is a proper noun. (Rule of thumb: when in doubt, leave it lowercase.)
+    audience: [tw, dev, mktg]
+
+- section: Code samples
+  topics:
+
+  - rule: |
+      ### Code formatting<br>
+      Use `code` font for inline code samples, including method names and variable names, and code blocks for larger code samples.
+    examples:
+      - |
+        **Example:** The `isRaining` variable can either be true or false.
+    audience: [tw, dev]
+
+  - rule: |
+      ### Introduce code samples<br>
+      Introduce code samples with a summary or description of what the code does. This introduction can end with a period or with a colon.
+    examples:
+      - |
+        **Example:**<br>
+        The following sample shows how to activate your death ray at maximum strength:<br>
+        ` evilLair.deathRay(max_strength); `
+    audience: [tw, dev]
+    featured: |
+      [Introduce code samples with a summary or description of what the code does.]({{site.baseurl}}{{page.permalink}}formatting-and-organization/#introduce-code-samples)
+
+  - rule: |
+      For more information about including code samples in documentation, see [APIs and SDKs]({{site.baseurl}}/{{page.audience}}/apis-and-sdks/).
+    audience: [tw, dev]
+
+- section: Images and screenshots
+  topics:
+
+  - rule: |
+      ### Captions<br>
+      Put captions and descriptions after their associated image.
+    audience: [tw, dev, mktg]
+    featured: |
+      [Put captions after their associated image.]({{site.baseurl}}{{page.permalink}}formatting-and-organization/#captions)
+
+  - rule: |
+      If you're including an image in procedural instructions, this means the image should appear first and its associated step (or steps) should appear afterwards.
+    audience: [tw, dev]
+
+  - rule: |
+      ### When to use screenshots<br>
+      Use screenshots sparingly. It can be helpful to include a screenshot when you're describing how to navigate a user interface (or are describing the features of an interface), especially if the interface is too complicated to explain with words alone. However, don't include a screenshot if a visual aid isn't necessary.<br>
+
+      This also means that procedural instructions may sometimes include screenshots, but not for every step. A single screenshot will often correspond to multiple steps.
+    audience: [tw, dev]
+    featured: |
+      [Use screenshots sparingly.]({{site.baseurl}}{{page.permalink}}formatting-and-organization/#when-to-use-screenshots)
+
+- section: Links
+  topics:
+
+  - rule: |
+      ### Helpful hyperlinks<br>
+      In-text hyperlinks are a useful way to direct readers' attention towards similar topics and related materials, especially if you don't want to break the flow of a document to explain an important word or concept. 
+
+      If you need to provide additional context for your readers, try linking to another post about that topic, a glossary entry that expands upon the definition of a term, or a guide with more detailed information about a specific parameter or object.
+    audience: [tw, dev, mktg]
+
+  - rule: |
+      ### Descriptive link text<br>
+      Use descriptive, non-obtrusive link text that doesn't disrupt the flow of the sentence.<br>
+      For example, to link to a doc called "Get Started With FraudSensor":
+    examples:
+      - |
+        **No:** To get started with FraudSensor (<u>link</u>), you'll need to set up a detection tag.
+      - |
+        **Also no:** To get started with Fraudsensor, you'll need to set up a detection tag. <u>Click here to learn more.</u>
+      - |
+        **Yes:** To <u>get started with FraudSensor</u>, you'll need to set up a detection tag.
+    audience: [tw, dev, mktg]
+    featured: |
+      [Use descriptive link text.]({{site.baseurl}}{{page.permalink}}formatting-and-organization/#descriptive-link-text)
+
+  - rule: |
+      One way to write descriptive links is to use link text that's similar to the title of the link destination or provides additional information about the page you're linking to.<br>
+
+      If you include the exact title of a page, match the capitalization of that title. 
+    examples: 
+      - |
+        **Example:** Follow the steps outlined in <u>Getting Started With FraudSensor</u> before proceeding. 
+    audience: [tw, mktg]
+
+  - rule: |
+      If you don't include the exact title of a page, capitalize the link text as if it were part of a normal sentence.
+    examples: 
+      - |
+        **Example:** Make sure you've <u>installed FraudSensor</u> before proceeding.
+    audience: [tw, mktg]
+
+  - rule: |
+      However, if it's too hard to seamlessly integrate a link into a sentence, you can also write a new, complete sentence that directs readers towards a relevant topic. These sentences should typically begin with a phrase like "For more information," or "To learn more about [topic]," before including the link.
+    examples: 
+      - |
+        **Example:** For more information, consult our <u>FraudSensor Parameters</u> guide.
+    audience: [tw, mktg]
+
+  - rule: |
+      ### Link the first instance<br>
+       you'd like to link to another page that explains a specific term or concept, insert the hyperlink the first time that term or concept appears in the body of the doc (not counting titles or headings).
+    examples:
+      - |
+        **Example:** The <u>MediaGuard</u> Dashboard includes data about IVT. Based on this MediaGuard data...
+    audience: [tw, dev, mktg]
+
+- section: Lists
+  topics:
+
+  - rule: |
+      ### Introduce lists<br>
+      Introduce lists with a summary or description of what the list is for. This introduction can end with a period or with a colon.
+    audience: [tw, dev]
+
+  - rule: |
+      ### Ordered and unordered lists<br>
+      When the order of list items isn't important, use a bulleted (unordered) list.
+    examples:
+      - |
+        **Example:**<br>
+        A bicycle has three main components:
+          * Seat
+          * Handlebars
+          * Tires
+    audience: [tw, dev]
+
+  - rule: |
+      When the order of list items is important, use a numbered (ordered) list. This usually appplies to [sequences of steps or instructions]({{site.baseurl}}{{page.permalink}}formatting-and-organization/#procedural-instructions). 
+    examples:
+      - |
+        **Example:** <br>
+        To bake a cake, follow these steps:
+        1. Mix the batter.<br>
+        2. Bake in the oven.<br>
+        3. Decorate to perfection.
+    audience: [tw, dev]
+
+  - rule: |
+      However, if a procedure only has one step, use a bulleted (unordered) list instead.
+    examples:
+      - |
+        **Example:**<br>
+        To turn on the light:
+          * Flip the light switch to the ON position.
+    audience: [tw, dev]  
+
+  - rule: |
+      ### Paired data<br>
+      For lists that include two pieces of data per list item (like a glossary term and its definition), use a bulleted (unordered) list. 
+
+      Format the first piece of data in **bold**, then use a colon to introduce the next piece of data.
+    examples:
+      - |
+        **Example:**<br>
+        The theme park offers three attractions.
+          * **Screamin' Mean Crazy Coaster:** A high-speed roller coaster. Not recommended for children.
+          * **Big Joe's River Adventure:** A log ride with water features. Suitable for all ages, but riders will get wet.
+          * **Schubert Express:** An interactive train tour. Perfect for young guests.
+    audience: [tw, dev]  
+
+  - rule: |
+      ### Parallel structure<br>
+      Try to use parallel structure between different items in the same list. For example, you might start each list item with a verb or write each list item as a complete sentence.
+    audience: [tw, dev]  
+
+  - rule: |
+      ### To list or not to list?<br>
+      If a list has fewer than three items, you might want to present the information in another format instead. 
+    audience: [tw, dev]  
+
+- section: Numbers
+  topics:
+
+  - rule: |
+      ### When to spell out numbers<br>
+      Spell out numbers zero through nine when they appear in a sentence, unless a numeral would be more appropriate (like for a version number, file size, or percentage).
+    examples:
+      - |
+        **Example:** A bass guitar can have four, five, or six strings.
+      - |
+        **Example:** Files should not exceed 8 MB in size.
+    audience: [tw, mktg]
+
+  - rule: |
+      However, if another numeral appears in the same sentence, use numerals consistently throughout.
+    examples:
+      - |
+        **Example:** Of the dentists surveyed, only 1 in 100 recommended using chocolate frosting instead of toothpaste.
+    audience: [tw, mktg]
+
+  - rule: |
+      Use numerals for numbers 10 and higher.
+    examples:
+      - |
+        **Example:** There were 14 penguins at the zoo.
+    audience: [tw, mktg]
+
+  - rule: |
+      If an ordinal number appears in a sentence (like *first*, *third*, or *twenty-ninth*), spell it out.
+    examples:
+      - |
+        **Example:** The seventh page contains information about your warranty.
+    audience: [tw, mktg]
+
+  - rule: |
+      Spell out indefinite and nonspecific numbers.
+    examples:
+      - |
+        **Example:** Millions of people suffer from seasonal allergies.
+    audience: [tw, mktg]
+
+- section: Procedural instructions
+  topics:
+
+  - rule: |
+      ### Imperative verbs<br>
+      When possible, begin each step with an imperative verb. If a dependent clause precedes an independent clause, it's okay if the imperative verb isn't the first word in the sentence.
+    examples:
+      - |
+        **Example:** Save your work before continuing.
+      - |
+        **Example:** Choose any sword from the display case.
+      - |
+        **Example:** To keep the park clean, pick up your trash.
+    audience: [tw, dev]
+
+  - rule: |
+      ### Introduce procedures<br>
+      Introduce procedural instructions with a summary or description of what the procedure are for and what the reader will accomplish. This introduction can end with a period or with a colon.
+    audience: [tw, dev]
+    featured: |
+      [Introduce procedural instructions with a summary or description of what the procedure is for.]({{site.baseurl}}{{page.permalink}}formatting-and-organization/#introduce-procedures)
+
+  - rule: |
+      ### List all the steps<br>
+      Use a numbered list to write out each step in a procedure. However, if a procedure only has one step, use a bulleted list instead.<br>
+
+      For more information, see [Ordered and unordered lists]({{site.baseurl}}{{page.permalink}}#ordered-and-unordered-lists).
+    audience: [tw, dev]
+
+  - rule: |
+      ### Location<br>
+      If a step requires the reader to perform an action from a specific page, menu, or location, state the location before you describe the action.
+    examples:
+      - |
+        **Example:** Using the **Country** drop-down menu, select your country of residence.
+    audience: [tw]
+
+  - rule: |
+      ### One action per step<br>
+      Generally speaking, each step in a procedure should describe a single action.<br>
+
+      However, sometimes it's helpful to combine several fast, closely related actions into a single step, especially to describe UI navigation. You can use [angle brackets]({{site.baseurl}}/{{page.audience}}/user-interfaces/#angle-brackets) to describe the process of navigating multiple menu items in a row.
+    examples:
+      - |
+        **Example:** Select **Filter > Distort > Liquify**.
+    audience: [tw, dev]
+
+  - rule: |
+      ### Outcomes first<br>
+      In most situations, if a step includes its intended outcome or goal, describe the outcome of the step before you describe the instructions to carry it out. (In other words, the dependent clause comes first.)
+    examples:
+      - |
+        **No:** Select **New file** to create a new file.
+      - |
+        **Yes:** To create a new file, select **New file**.
+    audience: [tw]
+
+- section: Tables
+  topics:
+
+  - rule: |
+      ### Introduce tables<br>
+      Most tables need an introductory sentence (or paragraph) before the table begins. This introduction can end with a period or with a colon.
+    audience: [tw, dev]
+
+  - rule: |
+      ### Table or list?
+      If a table only has two columns, you should probably format the information as a [list]({{site.baseurl}}{{page.permalink}}#paired-data) instead.
+    audience: [tw, dev]
+
+- section: Titles and headings
+  topics:
+
+  - rule: |
+      ### Title capitalization<br>
+      Use title case for titles (`h1`).
+    audience: [tw, dev, mktg]
+    featured: |
+      [Use title case for titles.]({{site.baseurl}}{{page.permalink}}formatting-and-organization/#title-capitalization)
+
+  - rule: |
+      ### Heading capitalization<br>
+      Use sentence case for headings (`h2`, `h3`, and so on).
+    audience: [tw, dev, mktg]
+    featured: |
+      [Use sentence case for headings.]({{site.baseurl}}{{page.permalink}}formatting-and-organization/#heading-capitalization)
+  
+  - rule: |
+      ### Include descriptions after every heading<br>
+      When writing public-facing technical documentation, try to make sure that two headings never "touch." Every section of a doc needs an introduction, so each heading should be followed by some kind of summary or description before the next subheading appears.<br>
+
+      Try to provide necessary context for your reader: what is this section describing? Why is it important?
+    examples:
+      - |
+        **Example:**<br>
+        ```
+        ## Mammals
+        Mammals are warm-blooded vertebrates. They can live in water or on land.
+        ### Aquatic mammals
+        Aquatic mammals are mammals that live primarily or entirely in water, including whales, dolphins, seals, and manatees. However, like all mammals, they still breathe air and must surface periodically to do so.
+        ```
+    audience: [tw, dev]
+    featured: |
+      [After each heading, include a summary or description of the following section.]({{site.baseurl}}{{page.permalink}}formatting-and-organization/#include-descriptions-after-every-heading)
+
+  - rule: |
+      ### Heading hierarchy<br>
+      Don't jump between heading levels. For example, an `h2` heading should not be immediately followed by an `h4` heading.
+    audience: [tw, dev, mktg]
+  
+  - rule: |
+      ### Tasks in headings and titles<br>
+      If a heading or title describes a task, use an infinitive (a "plain" verb) instead of a gerundive (an *-ing* verb).
+    examples:
+      - |
+        **No:** `## Installing Java`
+      - |
+        **Yes:** `## Install Java`
+    audience: [tw, dev]
+
+- section: Miscellaneous
+  topics:
+
+  - rule: |
+      ### Avoid walls of text<br>
+      Try to break up long stretches of text by adding subheadings, using bullet points, or splitting one long paragraph into several smaller paragraphs.
+    audience: [tw, dev, mktg]
+
+  - rule: |
+      ### Consistency 
+      Above all else, strive to be consistent across similar items in the same document. For example, if you're writing a glossary, decide whether each definition should be a complete sentence or not. Don't use complete sentences for search definitions and not others.
+    audience: [tw, dev, mktg]
+
+  - rule: |
+      ### Spaces
+      Use one space after each sentence, not two.
+    audience: [tw, dev, mktg]

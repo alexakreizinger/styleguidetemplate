@@ -1,0 +1,20 @@
+I",<h1 id="style-guide-template">Style Guide Template</h1>
+<p>A Jekyll-based style guide with single-sourcing across multiple audiences. Built by <a href="https://alexakreizinger.com/">Alexa Kreizinger</a>.</p>
+
+<h2 id="why-this-exists">Why this exists</h2>
+
+<ul>
+  <li>Style guides are great–but isn’t it a pain to keep several style guides in sync across multiple audiences?</li>
+</ul>
+
+<h2 id="how-it-works">How it works</h2>
+
+<ul>
+  <li>
+    <p>Everything generated automatically as much as possible–after you’ve set up the pages with the correct variables and include functions, you only ever need to edit the style rule YAML files directly, not individual audience pages</p>
+  </li>
+  <li>
+    <p>Designed to scale, regardless of whether you have three audiences or thirty audiences</p>
+  </li>
+</ul>
+:ET

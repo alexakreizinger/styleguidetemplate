@@ -1,0 +1,211 @@
+I"�'<h1 class="no_toc" id="grammar">Grammar</h1>
+<details>
+  <summary class="text-delta">
+    Table of contents
+  </summary>
+<ul id="markdown-toc">
+  <li><a href="#abbreviations" id="markdown-toc-abbreviations">Abbreviations</a>    <ul>
+      <li><a href="#abbreviations-as-verbs" id="markdown-toc-abbreviations-as-verbs">Abbreviations as verbs<br /></a></li>
+      <li><a href="#spell-out-abbreviations" id="markdown-toc-spell-out-abbreviations">Spell out abbreviations<br /></a></li>
+    </ul>
+  </li>
+  <li><a href="#active-and-passive-voice" id="markdown-toc-active-and-passive-voice">Active and passive voice</a>    <ul>
+      <li><a href="#active-voice" id="markdown-toc-active-voice">Active voice<br /></a></li>
+      <li><a href="#passive-voice" id="markdown-toc-passive-voice">Passive voice<br /></a></li>
+    </ul>
+  </li>
+  <li><a href="#pronouns" id="markdown-toc-pronouns">Pronouns</a>    <ul>
+      <li><a href="#first-person-pronouns" id="markdown-toc-first-person-pronouns">First-person pronouns<br /></a></li>
+      <li><a href="#second-person-pronouns" id="markdown-toc-second-person-pronouns">Second-person pronouns<br /></a></li>
+      <li><a href="#singular-they" id="markdown-toc-singular-they">Singular <em>they</em><br /></a></li>
+      <li><a href="#pronouns-and-clarity" id="markdown-toc-pronouns-and-clarity">Pronouns and clarity<br /></a></li>
+      <li><a href="#referring-to-groups-of-people" id="markdown-toc-referring-to-groups-of-people">Referring to groups of people<br /></a></li>
+    </ul>
+  </li>
+  <li><a href="#spelling" id="markdown-toc-spelling">Spelling</a>    <ul>
+      <li><a href="#american-english" id="markdown-toc-american-english">American English<br /></a></li>
+    </ul>
+  </li>
+  <li><a href="#verbs-and-tense" id="markdown-toc-verbs-and-tense">Verbs and tense</a>    <ul>
+      <li><a href="#present-tense" id="markdown-toc-present-tense">Present tense<br /></a></li>
+      <li><a href="#future-tense" id="markdown-toc-future-tense">Future tense<br /></a></li>
+      <li><a href="#api-reference" id="markdown-toc-api-reference">API reference<br /></a></li>
+    </ul>
+  </li>
+  <li><a href="#miscellaneous" id="markdown-toc-miscellaneous">Miscellaneous</a>    <ul>
+      <li><a href="#contractions" id="markdown-toc-contractions">Contractions<br /></a></li>
+      <li><a href="#data-is-singular" id="markdown-toc-data-is-singular"><em>Data</em> is singular<br /></a></li>
+      <li><a href="#phrasal-nouns-vs-phrasal-verbs" id="markdown-toc-phrasal-nouns-vs-phrasal-verbs">Phrasal nouns vs. phrasal verbs<br /></a></li>
+    </ul>
+  </li>
+</ul>
+
+</details>
+
+<p>Guidelines for building the grammatical machinery of a sentence.</p>
+
+<h2 id="abbreviations">Abbreviations</h2>
+
+<h3 id="abbreviations-as-verbs">Abbreviations as verbs<br /></h3>
+<p>Don’t use abbreviations or acronyms as verbs.</p>
+
+<ul>
+  <li>
+    <p><strong>No:</strong> CNAME the domain.</p>
+  </li>
+  <li>
+    <p><strong>Yes:</strong> Add the domain to your CNAME records.</p>
+  </li>
+</ul>
+
+<h3 id="spell-out-abbreviations">Spell out abbreviations<br /></h3>
+<p>If you’re using an abbreviation that isn’t well-known, use its full, unabbreviated form the first time it appears and provide its shortened form in parentheses. You can then use the shortened form throughout the rest of the document.</p>
+
+<ul>
+  <li><strong>Example:</strong> The Aperture Science Test Selection Dashboard supports single sign-on (SSO). To configure SSO for your team…</li>
+</ul>
+
+<h2 id="active-and-passive-voice">Active and passive voice</h2>
+
+<h3 id="active-voice">Active voice<br /></h3>
+<p>Try to use the active voice (which focuses on the “do-er” of an action) whenever possible.</p>
+
+<ul>
+  <li>
+    <p><strong>No:</strong> The data must be updated.<br />
+(Passive. Who needs to update the data? The user? The program itself? Someone else?)</p>
+  </li>
+  <li>
+    <p><strong>Yes:</strong> You must update your data before continuing.<br />
+(Active. The subject is <em>you</em>—the reader knows who must perform the action.)</p>
+  </li>
+  <li>
+    <p><strong>Also yes:</strong> Update your data.<br />
+(Also acceptable; imperative verbs are active and speak directly to the reader, which is useful for procedural instructions.)</p>
+  </li>
+</ul>
+
+<h3 id="passive-voice">Passive voice<br /></h3>
+<p>However, there may be times when the passive voice is preferable, including: (1) to focus on the outcome or recipient of action rather than who’s performing it, (2) to avoid blaming the user for an error, or (3) when the reader doesn’t need to know who performed an action (in the case of an automatic process or backend system).</p>
+
+<ul>
+  <li><strong>Yes:</strong> Your password will be reset.<br />
+(Acceptable passive. Since the reader doesn’t need to do anything, the performer of the action is less important than its outcome.)</li>
+</ul>
+
+<h2 id="pronouns">Pronouns</h2>
+
+<h3 id="first-person-pronouns">First-person pronouns<br /></h3>
+<p>It’s okay to refer to Aperture Science with first-person pronouns like <em>we</em> or <em>our.</em> For best results, try to mention Aperture Science by name at least one time before using a pronoun in its place.</p>
+
+<ul>
+  <li><strong>Example:</strong> Aperture Science does not collect information about your age or date of birth. But if we did, we might throw you a surprise party.</li>
+</ul>
+
+<p>However, there may be times when it’s clearer to refer to Aperture Science by name, especially if you need to specify the name of our product or company.</p>
+
+<ul>
+  <li><strong>Example:</strong> This feature prevents a conflict between Black Mesa’s integration and Aperture Science’s backend.</li>
+</ul>
+
+<h3 id="second-person-pronouns">Second-person pronouns<br /></h3>
+<p>When addressing the reader, it’s okay to use second-person pronouns like <em>you</em> and <em>your.</em> Don’t use third-person language like <em>user</em> or <em>customer</em> in public-facing materials written for those very same users and customers—address them directly instead!</p>
+
+<h3 id="singular-they">Singular <em>they</em><br /></h3>
+<p>When referring to a person of indeterminate or unknown gender, use the singular <em>they</em> rather than gendered pronouns like <em>she,</em> <em>he,</em> or any combination thereof (like <em>(s)he</em> or <em>his or her</em>).</p>
+
+<ul>
+  <li>
+    <p><strong>No:</strong> Someone left his or her bike outside.</p>
+  </li>
+  <li>
+    <p><strong>Yes:</strong> Someone left their bike outside.</p>
+  </li>
+</ul>
+
+<h3 id="pronouns-and-clarity">Pronouns and clarity<br /></h3>
+<p>Make sure that each pronoun has a clear antecedent. (In other words, make sure it’s obvious what the pronoun is referring to.) One of the easiest ways to avoid ambiguity is to repeat the actual noun instead of using a pronoun in its place.</p>
+
+<ul>
+  <li>
+    <p><strong>Unclear:</strong> The boy hit the bat against the pillar until it broke.<br />
+(What broke—the pole, or the pillar? There’s no way to tell from context alone.)</p>
+  </li>
+  <li>
+    <p><strong>Clear:</strong> The boy hit the bat against the pillar until the pillar broke.<br />
+(It was the pillar!)</p>
+  </li>
+</ul>
+
+<h3 id="referring-to-groups-of-people">Referring to groups of people<br /></h3>
+<p>Always use <em>who</em> (instead of <em>that</em>) when referring to people, even if the group of people is abstract.</p>
+
+<ul>
+  <li>
+    <p><strong>No:</strong> Send an email to users that registered early.</p>
+  </li>
+  <li>
+    <p><strong>Yes:</strong> Send an email to users who registered early.</p>
+  </li>
+</ul>
+
+<h2 id="spelling">Spelling</h2>
+
+<h3 id="american-english">American English<br /></h3>
+<p>Use standard American English spelling conventions.</p>
+
+<h2 id="verbs-and-tense">Verbs and tense</h2>
+
+<h3 id="present-tense">Present tense<br /></h3>
+<p>Use the present tense whenever possible.</p>
+
+<h3 id="future-tense">Future tense<br /></h3>
+<p>However, it can sometimes be helpful to use the future tense for specific examples of cause and effect.</p>
+
+<ul>
+  <li><strong>Example:</strong> If you run multiple reports, each report will generate its own file.</li>
+</ul>
+
+<h3 id="api-reference">API reference<br /></h3>
+<p>In API reference documentation (and certain types of non-API glossaries), describe each item or method in the present continual tense rather than as an imperative or procedural instruction. In other words, describe what the method does, not what the user must do.</p>
+
+<ul>
+  <li>
+    <p><strong>Weak:</strong> <code class="language-plaintext highlighter-rouge">end()</code>: Cancel the current session.<br /> 
+(Implied subject is <em>you</em>—the user will cancel the session.)</p>
+  </li>
+  <li>
+    <p><strong>Strong:</strong> <code class="language-plaintext highlighter-rouge">end()</code>: Cancels the current session.<br />
+(The subject is the method itself—the method cancels the session.)</p>
+  </li>
+</ul>
+
+<p>However, if you’re describing how to use a method rather than a definition of what the method does, it’s okay to use standard procedural instructions.</p>
+
+<ul>
+  <li><strong>Example:</strong> Call <code class="language-plaintext highlighter-rouge">end()</code> to cancel the current session.</li>
+</ul>
+
+<p>For more information, see <a href="/styleguidetemplate/dev/apis-and-sdks/">APIs and SDKs</a> and <a href="/styleguidetemplate/dev/formatting-and-organization/#procedural-instructions">Procedural Instructions</a>.</p>
+
+<h2 id="miscellaneous">Miscellaneous</h2>
+
+<h3 id="contractions">Contractions<br /></h3>
+<p>It’s okay to use contractions.</p>
+
+<h3 id="data-is-singular"><em>Data</em> is singular<br /></h3>
+<p>Treat <em>data</em> as a singular, uncountable noun.</p>
+
+<ul>
+  <li>
+    <p><strong>No:</strong> The data support this conclusion.</p>
+  </li>
+  <li>
+    <p><strong>Yes:</strong> The data supports this conclusion.</p>
+  </li>
+</ul>
+
+<h3 id="phrasal-nouns-vs-phrasal-verbs">Phrasal nouns vs. phrasal verbs<br /></h3>
+<p>Don’t use phrasal nouns and phrasal verbs interchangably. Although <em>login</em> and <em>log in</em> may look similar, they mean different things—a <em>login</em> (noun) is the credential you use to <em>log in</em> (verb).</p>
+
+:ET

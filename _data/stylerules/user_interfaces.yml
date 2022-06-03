@@ -1,0 +1,124 @@
+description: Guidelines for describing the way users interact with our products.
+
+rules:
+- section: Best practices
+  topics:
+
+  - rule: |
+      ### Bold UI elements<br>
+      When writing procedural instructions, if the reader must interact with a specific UI element, put the name of that UI element in bold.
+    audience: [tw, dev]
+    examples:
+      - |
+        **Example:** Select **About** to open the About page.
+    featured: |
+      [If the reader must interact with a specific UI element, put the name of that UI element in bold.]({{site.baseurl}}{{page.permalink}}user-interfaces/#bold-ui-elements)
+
+  - rule: |
+      ### Capitalize UI elements<br>
+      Mirror the capitalization of UI elements' names as they appear in the actual product. However, if name of a UI element is inconsistently capitalized within the product or appears in all caps, use sentence case instead.
+    audience: [tw]
+
+  - rule: |
+      ### Ellipses<br>
+      If a UI element's name includes an ellipsis, don't include the ellpsis in your description of that element.
+    examples:
+      - |
+        **No:** Select **Next...** to proceed.
+      - |
+        **Yes:** Select **Next** to proceed.
+    audience: [tw]
+
+  - rule: |
+      ### Task-oriented instructions<br>
+      Sometimes it's helpful to describe the task the reader should aim to accomplish rather than the specific UI elements they need to interact with, especially if there are multiple ways to perform the same task or if the way you perform it isn't relevant to its outcome.<br>
+      However, this isn't a fixed rule and often depends on other factors.
+    examples:
+      - |
+        **Good:** Select **Save** before continuing.
+      - |
+        **Better:** Save your progress before continuing.
+    audience: [tw]
+    featured: |
+      [Try to write task-oriented instructions.]({{site.baseurl}}{{page.permalink}}user-interfaces/#task-oriented-instructions)
+
+  - rule: |
+      ### UI elements as verbs
+      Don't use the names of UI elements as verbs.
+    examples: 
+      - |
+        **No:** When you're finished, **Exit** your session.
+      - |
+        **Yes:** When you're finished, select **Exit** to end your session.
+    audience: [tw, dev]
+
+- section: Interacting with UIs
+  topics:
+
+  - rule: |
+      ### Angle brackets<br>
+      You can use angle brackets (in bold) to describe the process of navigating multiple menu items in a row.
+    examples:
+      - |
+        **Good:** Open the **Filter** menu, then select **Distort**, then select **Liquify**.
+      - |
+        **Better:** Select **Filter > Distort > Liquify**.
+    audience: [tw, dev]
+    featured: |
+      [Use angle brackets to describe the process of navigating multiple menu items in a row.]({{site.baseurl}}{{page.permalink}}user-interfaces/#angle-brackets)
+
+  - rule: |
+      ### Generic element names<br>
+      Try not to include generic element names (like *button* or *icon*) when instructing readers to interact with that element; instead, just use the name of the element.
+    examples:
+      - |
+        **No:** Select the **Install** button.
+      - |
+        **Yes:** Select **Install.**
+    audience: [tw, dev]
+
+  - rule: |
+      ### *Select* vs. *click*<br>
+      When directing readers to interact with a UI element, try to use *select* instead of *click*. The word *click* implies that the reader must be using a mouse; *select* is a broad term that encompasses mouse clicks, touchscreen taps, keyboard shortcuts, and more.
+    audience: [tw, dev]
+    featured: |
+      [Use *select* instead of *click*.]({{site.baseurl}}{{page.permalink}}user-interfaces/#select-vs-click)
+
+- section: UI terminology
+  topics:
+
+  - rule: |
+
+      When writing procedural instructions that describe or refer to the elements of an interface, use the following standardized terms:<br>
+
+      * **Page:** The active area or interface within an application, program, or website. (In most circumstances, *page* is preferable to *screen*.)
+
+      * **Dialog box:** A small window that appears on top of the main interface. Although most dialog boxes are technically pop-ups, don't refer to them as *pop-ups*.
+
+      * **Pane:** A distinct section or area within a larger window or page. Don't use the word *panel* as a substitute.
+
+      * **Card:** A small pane that displays specific information about a single topic. Users can often interact with cards to reveal more information or actions related to a topic. Cards tend to resemble physical cards, sticky notes, or tiles. (However, in most circumstances, *card* is preferable to *tile*).
+
+      * **Menu:** A general term for any list of items or options. If applicable, you can specify one of the following menu types:
+
+          * **Dropdown menu:** A collapsible menu that lets you select from a list of items.
+
+          * **Menu bar:** A menu displayed across the top of a page or window. Menu bars often contain multiple dropdown menus (for example, Photoshop's menu bar includes *File*, *Edit*, *Image*, *Layer*, *Select*, and so on.)
+
+          * **Sidebar:** A menu displayed on the side of a page, often used for navigation purposes. In some circumstances, users can choose to hide the sidebar when it's not in use.
+          
+          * **Navigation menu:** Any menu that lets you navigate between multiple pages. This is a generic term that encompasses many types of menus; some navigation menus may be sidebars or menu bars (or something else altogether), but you can always use the term *navigation menu* if you're not sure what term fits best.
+
+      * **Tab:** An element that resembles a physical file tab. The word *tab* may also refer to the area that that tab leads to or the elements that it contains. (For example: "Select the **Details** tab." versus "In the Details tab, you'll find information about...")
+
+      * **Text field:** An element that lets you enter text.
+
+      * **Checkbox:** An element that lets you select/unselect a single option or select/unselect any combination of options from a list of items. Try not to use the words *check* or *uncheck* to describe interaction with checkboxes; instead, use *select* or *unselect*. 
+
+      * **Radio button:** An element that lets you select one option from a list of multiple items.
+
+      * **Toggle:** An element that lets you switch a single option between two states (but does not resemble a checkbox). 
+
+      * **Expander arrow:** An small arrow or triangle that lets the user expand or collapse a specific UI element. 
+
+    audience: [tw, dev]

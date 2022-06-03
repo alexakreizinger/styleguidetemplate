@@ -1,0 +1,247 @@
+
+description: Guidelines for building the grammatical machinery of a sentence.
+
+rules:
+- section: Abbreviations
+
+  topics:
+  - rule: |
+      ### Abbreviations as verbs<br>
+      Don't use abbreviations or acronyms as verbs.
+    examples:
+      - |
+        **No:** CNAME the domain.
+      - |
+        **Yes:** Add the domain to your CNAME records.
+    audience: [tw, dev]
+
+  - rule: |
+      ### Latin abbreviations<br>
+      It's okay to use Latin abbreviations inside parentheses (e.g., like this), but not in the body of a sentence.
+    examples:
+      - |
+        **No:** The beach is home to fish, crabs, sharks, etc.
+      - |
+        **Yes:** The beach is home to fish, crabs, and so on.
+      - |
+        **Also yes:** Many sea creatures (fish, crabs, sharks, etc.) live at the beach.
+      - |
+        **Also also yes:** Many sea creatures (e.g., the loggerhead turtle) are endangered.
+    audience: [tw, mktg]
+
+  - rule: |
+      Don't confuse *i.e.* (*id est*, that is to say) and *e.g.* (*exempli gratia*, for the sake of example). When in doubt, spell it out—use the English phrase instead!
+    audience: [tw, mktg]
+
+  - rule: |
+      ### Spell out abbreviations<br>
+      If you're using an abbreviation that isn't well-known, use its full, unabbreviated form the first time it appears and provide its shortened form in parentheses. You can then use the shortened form throughout the rest of the document.
+    examples:
+      - |
+        **Example:** The Aperture Science Test Selection Dashboard supports single sign-on (SSO). To configure SSO for your team...
+    audience: [tw, dev, mktg]
+
+- section: Active and passive voice
+  topics:
+
+  - rule: |
+      ### Active voice<br>
+      Try to use the active voice (which focuses on the "do-er" of an action) whenever possible.
+    examples:
+      - |
+        **No:** The data must be updated.<br>
+        (Passive. Who needs to update the data? The user? The program itself? Someone else?)
+      - |
+        **Yes:** You must update your data before continuing.<br>
+        (Active. The subject is *you*—the reader knows who must perform the action.)
+      - |
+        **Also yes:** Update your data.<br>
+        (Also acceptable; imperative verbs are active and speak directly to the reader, which is useful for procedural instructions.)
+    audience: [tw, dev, mktg]
+    featured: |
+      [Use the active voice whenever possible.]({{site.baseurl}}{{page.permalink}}grammar/#active-and-passive-voice)
+
+  - rule: |
+      ### Passive voice<br>
+      However, there may be times when the passive voice is preferable, including: (1) to focus on the outcome or recipient of action rather than who's performing it, (2) to avoid blaming the user for an error, or (3) when the reader doesn't need to know who performed an action (in the case of an automatic process or backend system).
+    examples:
+      - |
+        **Yes:** Your password will be reset.<br>
+        (Acceptable passive. Since the reader doesn't need to do anything, the performer of the action is less important than its outcome.)
+    audience: [tw, dev, mktg]
+
+- section: Pronouns
+  topics:
+
+  - rule: |
+      ### First-person pronouns<br>
+      It's okay to refer to Aperture Science with first-person pronouns like *we* or *our.* For best results, try to mention Aperture Science by name at least one time before using a pronoun in its place.
+    examples:
+      - |
+        **Example:** Aperture Science does not collect information about your age or date of birth. But if we did, we might throw you a surprise party.
+    audience: [tw, dev, mktg]
+
+  - rule: |
+      However, there may be times when it's clearer to refer to Aperture Science by name, especially if you need to specify the name of our product or company.
+    examples:
+      - |
+        **Example:** This feature prevents a conflict between Black Mesa's integration and Aperture Science's backend.
+    audience: [tw, dev, mktg]
+
+  - rule: |
+      ### Second-person pronouns<br>
+      When addressing the reader, it's okay to use second-person pronouns like *you* and *your.* Don't use third-person language like *user* or *customer* in public-facing materials written for those very same users and customers—address them directly instead!
+    audience: [tw, dev]
+    featured: |
+      [Use second-person pronouns like *you* and *your* to address the reader.]({{site.baseurl}}{{page.permalink}}grammar/#second-person-pronouns)
+
+  - rule: |
+      ### Singular *they*<br>
+      When referring to a person of indeterminate or unknown gender, use the singular *they* rather than gendered pronouns like *she,* *he,* or any combination thereof (like *(s)he* or *his or her*).
+    examples:
+      - |
+        **No:** Someone left his or her bike outside.
+      - |
+        **Yes:** Someone left their bike outside.
+    audience: [tw, dev, mktg]
+    featured: |
+      [Use the singular *they* as a gender-neutral pronoun.]({{site.baseurl}}{{page.permalink}}grammar/#singular-they)
+
+  - rule: |
+      ### Pronouns and clarity<br>
+      Make sure that each pronoun has a clear antecedent. (In other words, make sure it's obvious what the pronoun is referring to.) One of the easiest ways to avoid ambiguity is to repeat the actual noun instead of using a pronoun in its place.
+    examples:
+      - |
+        **Unclear:** The boy hit the bat against the pillar until it broke.<br>
+        (What broke—the pole, or the pillar? There's no way to tell from context alone.)
+      - |
+        **Clear:** The boy hit the bat against the pillar until the pillar broke.<br>
+        (It was the pillar!)
+    audience: [tw, dev, mktg]
+
+  - rule: |
+      Similarly, when using relative pronouns like *this* or *that,* you can reduce ambiguity by also restating the word or concept you're referring to (or replacing the pronoun entirely).
+    examples:
+      - |
+        **Unclear:** Send all data to Aperture Science's secure servers via carrier pigeon. This prevents hackers from intercepting your data.<br>
+        (Which part thwarts hackers: sending data to Aperture Science's secure servers, or the fact your data was sent via carrier pigeon?)
+      - |
+        **Clear:** Send all data to Aperture Science's secure servers via carrier pigeon. This pigeon relay prevents hackers from intercepting your data.<br>
+        (The pigeons thwart hackers!)
+    audience: [tw, mktg]
+
+  - rule: |
+      ### Referring to groups of people<br>
+      Always use *who* (instead of *that*) when referring to people, even if the group of people is abstract.
+    examples:
+      - |
+        **No:** Send an email to users that registered early. 
+      - |
+        **Yes:** Send an email to users who registered early.
+    audience: [tw, dev, mktg]    
+
+  - rule: |
+      ### Relative pronouns<br>
+      The relative pronouns *that* and *which* are not interchangable—use *that* for restrictive clauses and *which* for nonrestrictive clauses. (A good rule of thumb: nonrestrictive clauses tend to be offset by commas, while restrictive clauses do not.)
+    examples: 
+      - |
+        **Restrictive:** The new bass that I bought last week has two humbucker pickups.  
+      - |
+        **Nonrestrictive:** The new bass, which I bought last week, has two humbucker pickups.
+    audience: [tw, mktg]
+
+- section: Sentence structure
+  topics:
+
+  - rule: |
+      ### *And* and *but*<br>
+      It's okay to start a sentence with *and* or *but.*
+    audience: [tw, mktg]
+
+  - rule: |
+      ### Conditional clauses<br>
+      When applicable, put conditional clauses at the beginning of a sentence.
+    audience: [tw, mktg]
+
+  - rule: |
+      ### End prepositions<br>
+      It's okay to end a sentence with a preposition. However, if rewriting the sentence to avoid using an end preposition would help make its meaning clearer, you should try to rewrite it.
+    audience: [tw, mktg]
+
+- section: Spelling
+  topics:
+  
+  - rule: |
+      ### American English<br>
+      Use standard American English spelling conventions.
+    audience: [tw, dev, mktg]
+    featured: |
+      [Use standard American English spelling conventions.]({{site.baseurl}}{{page.permalink}}grammar/#american-english)
+
+  - rule: |
+      However, there may be exceptions to this rule when addressing audiences who are accustomed to another form of English—for example, if you're writing a sales deck for a European audience, it may be more appropriate to use British English. 
+    audience: [mktg]
+
+- section: Verbs and tense
+  topics:
+
+  - rule: |
+      ### Present tense<br>
+      Use the present tense whenever possible.
+    audience: [tw, dev, mktg]
+    featured: |
+      [Use the present tense whenever possible.]({{site.baseurl}}{{page.permalink}}grammar/#present-tense)
+
+  - rule: |
+      ### Future tense<br>
+      However, it can sometimes be helpful to use the future tense for specific examples of cause and effect.
+    examples:
+      - |
+        **Example:** If you run multiple reports, each report will generate its own file.
+    audience: [tw, dev]
+
+  - rule: |
+      ### API reference<br>
+      In API reference documentation (and certain types of non-API glossaries), describe each item or method in the present continual tense rather than as an imperative or procedural instruction. In other words, describe what the method does, not what the user must do.
+    examples:
+      - |
+        **Weak:** `end()`: Cancel the current session.<br> 
+        (Implied subject is *you*—the user will cancel the session.)
+      - |
+        **Strong:** `end()`: Cancels the current session.<br>
+        (The subject is the method itself—the method cancels the session.)
+    audience: [tw, dev]
+
+  - rule: |
+      However, if you're describing how to use a method rather than a definition of what the method does, it's okay to use standard procedural instructions.
+    examples:
+      - |
+        **Example:** Call `end()` to cancel the current session.
+    audience: [tw, dev]
+
+  - rule: |
+      For more information, see [APIs and SDKs]({{site.baseurl}}/{{page.audience}}/apis-and-sdks/) and [Procedural Instructions]({{site.baseurl}}/{{page.audience}}/formatting-and-organization/#procedural-instructions).
+    audience: [tw, dev]
+
+- section: Miscellaneous
+  topics:
+
+  - rule: |
+      ### Contractions<br>
+      It's okay to use contractions. 
+    audience: [tw, dev, mktg]
+
+  - rule: |
+      ### *Data* is singular<br>
+      Treat *data* as a singular, uncountable noun.
+    examples:
+      - |
+        **No:** The data support this conclusion.
+      - |
+        **Yes:** The data supports this conclusion.
+    audience: [tw, dev, mktg]
+
+  - rule: |
+      ### Phrasal nouns vs. phrasal verbs<br>
+      Don't use phrasal nouns and phrasal verbs interchangably. Although *login* and *log in* may look similar, they mean different things—a *login* (noun) is the credential you use to *log in* (verb).
+    audience: [tw, dev, mktg]
