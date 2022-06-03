@@ -1,6 +1,6 @@
 title: Style Guide Template
 description: A Jekyll-based style guide with single-sourcing across multiple audiences.
-url: "https://alexakreizinger.com" 
+url: "https://alexakreizinger.github.io" 
 baseurl: "/styleguidetemplate" 
 
 theme: just-the-docs
