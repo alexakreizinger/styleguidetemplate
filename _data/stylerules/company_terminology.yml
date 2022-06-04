@@ -9,9 +9,9 @@ rules:
       Don't shorten Aperture Science's product names in public-facing documentation.<br>
     examples:
       - |
-        **No:** You must activate the button to complete this test chamber.
+        **No:** You must activate the button to proceed.
       - |
-        **Yes:** You must activate the 1500 Megawatt Aperture Science Heavy Duty Super-Colliding Super Button to complete this test chamber.
+        **Yes:** You must activate the 1500 Megawatt Aperture Science Heavy Duty Super-Colliding Super Button to proceed.
     audience: [tw, dev, mktg]
     featured: |
       [Don't shorten Aperture Science's product names.]({{site.baseurl}}{{page.permalink}}company-terminology/#product-names)
@@ -21,9 +21,9 @@ rules:
       Unless you're referring to a specific function or piece of code that includes an internal codename, always use external names in public-facing documentation.
     examples:
       - |
-        Instead of KillBot, say **Aperture Science Sentry Turret**.
+        Instead of HostileBot, say **Aperture Science Sentry Turret**.
       - |
-        Instead of ImaginaryFriend, say **Aperture Science Weighted Companion Cube**. 
+        Instead of LoveSquare, say **Aperture Science Weighted Companion Cube**. 
     audience: [tw, dev]
     featured: |
       [Don't use internal product codenames in public-facing documentation.]({{site.baseurl}}{{page.permalink}}company-terminology/#internal-vs-external-names)
@@ -32,7 +32,12 @@ rules:
   topics:
 
   - rule: |
+      ### Failure isn't always bad<br>
+      Science relies on failure as much as it relies on success. Rather than berating a test subject for falling into a pit of toxic sludge, thank them for expanding the number of data points available about the effects of prolonged sludge exposure.
+    audience: [tw, dev, mktg]
+
+  - rule: |
       ### Words to avoid<br>
-      * Don't refer to test subjects as *guinea pigs* or *lab rats*. Instead, be sure to reassure all test subjects that they are active participants in the scientific process and possess far greater cognitive faculties than most rodents.
-      * Don't use words like *experiment* or *unaccredited clinical trial*; instead, say *test* or *Aperture Science Data Collection Session*. 
+      * Don't refer to test subjects as *guinea pigs* or *lab rats*. Instead, reassure all test subjects that they are active participants in the scientific process and possess far greater cognitive faculties than most rodents ever could.
+      * Don't use words like *experiment* or *clinical trial*; instead, say *test* or *Aperture Science Highly-Regulated Data Collection Session*. 
     audience: [tw, dev, mktg]
