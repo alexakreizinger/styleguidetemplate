@@ -12,11 +12,11 @@ Please note that various company names and product guidelines have been replaced
 
 ## Why this exists
 
-Style guides an excellent, vital resource for any organization—but what happens when you need to maintain multiple style guides for different audiences?
+Style guides are must-have resource for any company—but what happens when you need to maintain multiple style guides for different audiences?
 
-Rules that apply to someone designing a user interface, for example, may not apply to someone writing press releases, so it doesn't make sense to use a single style guide for both. On the other hand, other rules certainly *will* apply to both audiences, and it can be tough to keep these rules in sync if they're sourced from entirely separate guides. 
+For example, style guidelines that apply to someone designing a user interface might not apply to someone writing press releases, so it doesn't make sense to use a single set of style rules for both. On the other hand, other companywide styles certainly *will* apply to both audiences, and it can be tough to keep these rules in sync if they're sourced from entirely separate guides. 
 
-This template strikes a balance between the need to maintain discrete rules for separate audiences with the need to unify rules that apply to one or more audiences. Although certain style rules appear multiple times throughout this guide, each rule was only recorded in a single location; by using a tagging system, each rule is automatically populated in the relevant sections for any applicable audience (i.e., [Developers](/styleguidetemplate/dev), [Marketers](/styleguidetemplate/mktg), and/or [Technical Writers](/styleguidetemplate/tw). As such, if you ever need to edit or delete a rule, you only need to edit the rule's source file instead of painstakingly editing the three separate sections where it could possibly appear.
+This template strikes a balance between the need to maintain discrete rulesets for separate audiences with the need to unify certain overlapping rules that apply to multiple audiences. Although you may notice that certain style rules appear multiple times throughout this guide, each rule was only recorded in a single location; by using an audience-based tagging system, each rule is automatically populated in any and all applicable sections (i.e., [Developers](/styleguidetemplate/dev), [Marketers](/styleguidetemplate/mktg), and/or [Technical Writers](/styleguidetemplate/tw). As such, if you ever need to update a rule, you'd only need to edit the rule's source file instead of painstakingly combing through three separate sections where it could ostensibly appear.
 
 This template is also designed to be scalable, regardless of whether you have three audiences or thirty.
 
@@ -25,7 +25,7 @@ This template is also designed to be scalable, regardless of whether you have th
 TL;DR: A combination of YAML files, include tags, and Liquid variables that essentially turn your style ruleset into a mini database. (This is somehow both more complicated and less complicated than it sounds, but don't worry—I've already brute-forced my way through Jekyll's idiosyncrasies so you don't have to.)
 
 ### Style rules and YAML
-Lists of style rules are stored in a series of YAML files in the [`_data/stylerules/`](https://github.com/alexakreizinger/styleguidetemplate/tree/main/_data/stylerules) directory. For example, a basic ruleset file called `punctuation.yml` might look like this:
+Rulesets are stored in a series of YAML files in the [`_data/stylerules/`](https://github.com/alexakreizinger/styleguidetemplate/tree/main/_data/stylerules) directory. For example, a basic ruleset file called `punctuation.yml` might look like this:
 
 ```
 description: Rules about punctuation.
@@ -48,7 +48,7 @@ rules:
     audience: [tw, mktg]
 ```
 
-There's a lot going on here, but the most important thing to note so far is the `audience` key. The first rule has the `tw`, `mktg`, and `dev` tags, corresponding to Technical Writers, Developers, and Marketers, respectively. The second rule, on the other hand, only applies to Technical Writers and Marketers.
+There's a lot going on here, but the most important thing to note so far is the `audience` key. The "Avoid overuse" rule has the `tw`, `mktg`, and `dev` tags, corresponding to Technical Writers, Developers, and Marketers, respectively. The second rule, on the other hand, only applies to Technical Writers and Marketers.
 
 Here's a slightly expanded example of the `punctuation.yml` ruleset file:
 
@@ -126,7 +126,7 @@ Each audience has a subfolder in the `pages` folder—for example, `pages/dev/` 
 
 ### Putting it all together
 
-So, for example, if you use the following Liquid tags in `pages/dev/dev_punctuation.md`, where `page.audience` is defined in the file's YAML frontmatter and has a value of `dev`:
+So, for example, if you use the following Liquid tags in `pages/dev/dev_punctuation.md`, where `page.audience` is a variable defined in the file's YAML frontmatter and has a value of `dev`:
 
 ```
 {% assign file = site.data.stylerules.punctuation %}
@@ -135,7 +135,7 @@ So, for example, if you use the following Liquid tags in `pages/dev/dev_punctuat
 {% include get_rules_for_audience.md filename=file audience=aud %}
 ```
 
-You'd get a list of all punctuation rules that apply to the `dev` audience. Based on the expanded `punctuation.yml` file above, your output would look like this (but instead of in a code block it'd be correctly rendered in Markdown):
+You'd get a list of all punctuation-related rules that apply to the `dev` audience. Based on the expanded `punctuation.yml` file above, your output would look like this (but correctly rendered in Markdown instead of displayed in a code block):
 
 ```
 # Punctuation
@@ -157,4 +157,6 @@ Semicolons are your friend; however, like any friend, you might get sick of them
 
 ```
 
-Notice how only rules that had the `dev` tag showed up here? Instead of having to copy/paste them individually, we let Liquid do the heavy lifting for us. And if you were to repeat this process with a different YAML file or for a different audience tag, you'd get a completely different output from the same source files!
+Notice how only rules that had the `dev` tag appear in this output? (Two of the five total rules in `punctuation.yml` were rendered—I didn't think developers needed to be bogged down with the other three rules about independent and dependent clauses.) But instead of manually extracting those developer-applicable rules, we let Liquid do the heavy lifting for us. And if you were to repeat this process with a different YAML file or matched against a different audience, you'd get a completely different output from the same source files. All you need to do is change which variables are passed to the include tag.
+
+For a more under-the-hood explanation of this template's Jekyll architecture, check out my repo's [readme file](https://github.com/alexakreizinger/styleguidetemplate#readme).
