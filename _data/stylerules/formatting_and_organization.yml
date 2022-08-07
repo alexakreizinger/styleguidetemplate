@@ -10,10 +10,13 @@ rules:
     examples:
       - |
         **Info/Note:** A useful (but not urgent) message. Notes often provide clarifying information, tips and tricks, or additional advice.
+        {: .info }
       - |
         **Caution/Careful:** An important, semi-urgent message. Caution notes often invite the reader to slow down or tread carefully.
+        {: .warn }
       - |
         **Warning/Danger:** A critical, urgent message. Wargent notes often contain information that will lead to a serious error if not followed; readers must heed this message at all costs.
+        {: .danger }
     audience: [tw, dev]
 
   - rule: |

@@ -42,9 +42,27 @@ nav_order: 2
 
 ## Quick tips
 {% include get_featured_rules_for_audience.md filename=file1 audience=aud sectionname=section1 sectionlink=link1 %}
+
+---
+
 {% include get_featured_rules_for_audience.md filename=file2 audience=aud sectionname=section2 sectionlink=link2 %}
+
+---
+
 {% include get_featured_rules_for_audience.md filename=file3 audience=aud sectionname=section3 sectionlink=link3 %}
+
+---
+
 {% include get_featured_rules_for_audience.md filename=file4 audience=aud sectionname=section4 sectionlink=link4 %}
+
+---
+
 {% include get_featured_rules_for_audience.md filename=file5 audience=aud sectionname=section5 sectionlink=link5 %}
+
+---
+
 {% include get_featured_rules_for_audience.md filename=file6 audience=aud sectionname=section6 sectionlink=link6 %}
+
+---
+
 {% include get_featured_rules_for_audience.md filename=file7 audience=aud sectionname=section7 sectionlink=link7 %}
