@@ -1,6 +1,9 @@
 # Style Guide Template
 This style guide template uses YAML files to single-source style rules accross multiple audiences.
 
+Copyright (C) 2022 Alexa Kreizinger
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
 ## Repo basics
 
 All of the following information relates to the `main` branch. For all intents and purposes, ignore (but do not delete) the `gh-pages` branch. (For more information, consult the `.github/workflows/build-jekyll.yml` section below.)
