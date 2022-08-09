@@ -343,8 +343,7 @@ rules:
   
   - rule: |
       ### Include descriptions after every heading<br>
-      When writing public-facing technical documentation, try to make sure that two headings never "touch." Every section of a doc needs an introduction, so each heading should be followed by some kind of summary or description before the next subheading appears.<br>
-
+      Most docs can be improved by making sure that two headings never "touch." Ideally, every section of a doc needs an introduction, so each heading should be followed by some kind of summary or description before the next subheading appears.<br>
       Try to provide necessary context for your reader: what is this section describing? Why is it important?
     examples:
       - |
