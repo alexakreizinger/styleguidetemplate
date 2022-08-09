@@ -16,7 +16,7 @@ rules:
       Methods in particular should include a description of each parameter, return value, and possible exceptions thrown.
     audience: [tw, dev]
     featured: |
-      [Describe (almost) everything.]({{site.baseurl}}{{page.permalink}}api-reference/#describe-almost-everything)
+      [Describe (almost) everything.]({{site.baseurl}}{{page.permalink}}apis-and-sdks/#describe-almost-everything)
 
   - rule: |
       ### Code elements as plural nouns<br>
