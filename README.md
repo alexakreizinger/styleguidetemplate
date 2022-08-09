@@ -2,7 +2,8 @@
 This style guide template uses YAML files to single-source style rules accross multiple audiences.
 
 Copyright (C) 2022 Alexa Kreizinger
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+*This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.*
 
 ## Repo basics
 
@@ -56,6 +57,10 @@ Outputs every "featured" rule in a given `_data/stylerules/` file based on your 
 
 Sourced from [here](https://github.com/vividh/liquify). For more information about using Liquify, consult the "How to use Liquify" section below. 
 
+### `_templates`
+
+Various template files that explain how to create audience landing pages, audience rule pages, and YAML ruleset files.
+
 ### `_github/workflows/build-jekyll.yml`
 
 A custom GitHub Actions workflow that lets you deploy the GitHub Pages site as if you were running Jekyll locally. Crucial if I want to use non-approved plugins like Liquify. Some details:
@@ -99,10 +104,6 @@ The `pages` folder for the actual style guide output. Each audience has its own 
 * title: Technical Writers
 
 > **NOTE:** Some of the Liquid stuff for autogenerating links between pages is way easier when an audience's `audience` value and `url` slug are the same. As such, the `all` audience has an audience key just to make the URL part easier, even though the audience value isn't used to fetch any rules from the YAML files.
-
-### `YAMLtemplate.yml`
-
-Template for the YAML files in `_data/stylerules`. Not actually referenced by any other pages, this is just a regular old template to make it easier to create and wrangle style rule files with the correct syntax.
 
 ## How to use Liquify
 
