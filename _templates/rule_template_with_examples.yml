@@ -1,0 +1,172 @@
+# This template is meant to provide an in-depth explanation of how YAML rulesets work. If you'd like a more bare-bones template that you can quickly copy/paste to create your own rulesets, check out `rule_template_generic.yml`. 
+
+description: Guidelines for using those familiar dots, dashes, and squiggles.
+# Each ruleset file should only have one description. This description will correspond to the page where that ruleset is being displayed—for example, punctuation.yml corresponds to the /punctuation page, so its description should reflect this.
+
+rules: 
+# Each ruleset file should only have one 'rules' key. 
+
+- section: Colons
+# Most ruleset files will have more than one 'section' key. This section name will automatically appear as an h2  header on the page where the ruleset file is displayed—do NOT add the `##` to this YAML file. You should use sections to group similar groups of rules together.
+
+  topics: # Each section's rules should be contained within a single `topics` key. This `topics` key only contains a single rule because we only have one rule about colons.
+
+  - rule: | # If you'd like to add a title to a rule, include that title in the body of the rule itself with h3 syntax (`###`) followed by `<br>`. You must actually add the h3 syntax or the rule won't have a title. You can also use `<br>` to create line breaks at any point in the rule (or its examples).
+      ### Colons and capitalization<br> 
+      If you're using a colon within a self-contained sentence, the first word following the colon should remain lowercase (unless that word is a proper noun).
+    examples: # Each example will automatically be generated with a bullet point in front of it—do NOT add the bullet point in the body of the example itself (unless you're, for example, creating a sub-list within the rule or something similar). Rules can include one or multiple examples, or no examples at all.
+      - |
+        **Example:** We use three metrics in our analysis: quality, cost, and speed.
+    audience: [tw, mktg] # Possible audience values are `tw`, `dev`, and `mktg`. You can add or delete audiences for each rule as needed. Editing a rule's audience values will automatically add/remove that rule to the audience page that draws upon a specified ruleset (in this case, `<audience>/punctuation`.)
+
+- section: Commas
+  topics:
+  # This is a new section called "Commas" to group rules about commas.
+
+  - rule: |
+      ### Clauses<br>
+      If two independent clauses are separated by a coordinating conjunction, use a comma unless both clauses are very short.
+    examples:
+      - |
+        **Long:** We built everything slowly over the course of several months, and it all seems to work so far.
+      - |
+        **Short:** We worked too quickly and it all fell apart.
+    audience: [tw, mktg]
+
+  - rule: | # Rules aren't required to have titles—this one doesn't have a title at all. In this case, the content of the rule still falls under the "Clauses" grouping of the rule preceding it, so omitting a title here makes each rule flow more easily into one another. This kind of flow is useful if you'd like to chain together multiple rule explanations with their own respective examples (as seen here) or if different rules in the group have different audiences—for example, the first rule might be broad enough to apply to all audiences, but its subsequent rules might only cater to one or two specialized audiences.
+      If a dependent clause and an independent clause are separated by a coordinating conjunction, don't use a comma unless the sentence would be unclear without it.
+    examples:
+      - |
+        **Clear without comma:** The vacuum of space is cold and will kill you almost instantly. 
+      - |
+        **Needs comma for clarity:** Vacuums are unforgiving in space, but clean carpets marvelously well.
+    audience: [tw, mktg]
+
+  - rule: |
+      ### Introductory phrases<br>
+      Use a comma after an introductory phrase (like *however* or *furthermore* or *on the other hand*).
+    examples:
+      - |
+        **Example:** Despite this, we reached the mouth of the cave by sundown.
+    audience: [tw, dev, mktg]
+
+  - rule: |
+      ### Serial commas<br>
+      Use serial commas (also known as *Oxford commas*).
+    examples: # This rule has two examples.
+      - |
+        **No:** I love my parents, Godzilla and Wonder Woman.
+      - |
+        **Yes:** I love my parents, Godzilla, and Wonder Woman.
+    audience: [tw, dev, mktg]
+    featured: | # If you'd like a rule to be featured on an audience's landing page, you can add the `featured` key as follows to create a hyperlink from a short description. Just make sure to update the actual description and update the URL to replace "punctuation" with the name of the relevant page and "#serial-commas" with the specific header to link to. 
+      [Use serial commas.]({{site.baseurl}}{{page.permalink}}punctuation/#serial-commas)
+
+# The rest of this template is presented without additional comments. Everything included below follows the same principles as outlined above, but it may be helpful to see more rules in action without as many comments clogging up the syntax. ;) Thanks for reading, and happy style guide-ing!
+
+- section: Dashes and hyphens
+  topics:
+
+  - rule: |
+      ### Em dashes<br>
+      You can use em dashes—just don't put spaces between the em dash and the words surrounding it.
+    audience: [tw, mktg]
+
+  - rule: |
+      ### Compound modifiers<br>
+      Use a hyphen between compound modifiers unless the first word is in adverb ending in *-ly*. 
+    examples:
+      - |
+        **Hyphenated:** well-learned students
+      - |
+        **Not hyphenated:** easily performed tasks
+    audience: [tw, mktg]
+
+  - rule: |
+      ### Compound words<br>
+      Sometimes it's helpful to hyphenate compound words to avoid ambiguity. A good rule of thumb is to use a hyphen for compound words that aren't widely used or that could be mistaken for another word.
+    examples:
+      - |
+        **Hyphenated:** re-create, pre-date<br>
+      - |
+        **Not hyphenated:** remix, prepaid
+    audience: [tw, mktg]
+
+  - rule: |
+      ### Prefixes<br>
+      Use a hyphen between a prefix and a proper noun or abbreviation.
+    examples:
+      - |
+        **Example:** Files with non-JSON syntax are unsupported.
+    audience: [tw, mktg]
+
+  - rule: |
+      ### Suspended hyphens<br>
+      Use suspended hyphens to list several hyphenated compounds in a row.
+    examples:
+      - |
+        **Example:** The craft fair offers soap- and basket-making classes.
+      - |
+        **Example:** Bills come in one-, five, and twenty-dollar increments.
+    audience: [tw, mktg]
+
+- section: Parentheses
+  topics:
+
+  - rule: |
+      ### Avoid critical information<br>
+      Some readers may skip over any text that isn't part of the main sentence, so try not to include any critical information inside parentheses.
+    audience: [tw, dev]
+
+  - rule: |
+      ### End punctuation<br>
+      Place end punctuation marks (like commas and periods) outside parentheses unless the punctuation is part of the parenthetical text or the parentheses contain a standalone sentence.
+    examples:
+      - |
+        **Outside parentheses:** It's legal to own a zebra in certain states (like Nevada).
+      - |
+        **Inside parentheses:** It's legal to own a zebra in certain states. (Nevada is one of them.)
+    audience: [tw, mktg]
+
+  - rule: |
+      ### Mid-sentence parentheticals<br>
+      Parenthetical statements are useful for mid-sentence examples and short asides (like this one), but excessively long and complicated parentheticals may be better of rewritten as their own sentence (or else you'll end up with a meandering, monstrous behemoth of a sentence that seems to go on and on and on with no end in sight).
+    audience: [tw, mktg]
+
+- section: Semicolons
+  topics:
+
+  - rule: |
+      ### Avoid overuse<br>
+      Semicolons are your friend; however, like any friend, you might get sick of them if they show up too frequently. Tread carefully and wisely.
+    audience: [tw, dev, mktg]
+
+  - rule: |
+      ### Clauses<br>
+      You can use a semicolon to connect two independent clauses.
+    examples:
+      - |
+        **Example:** The film received terrible reviews; none of the reviewers could even stay awake through the whole thing.
+    audience: [tw, mktg]
+
+  - rule: |
+      You can also use a semicolon to connect two independent clauses connected by a conjunctive adverb (like *however* or *similarly*) or, occasionally, a regular old conjunction (like *and* or *but* or *if*).
+    examples:
+      - |
+        **Example:** Most mountains aren't as tall as Everest; however, they still pose a suitable challenge for climbers.
+    audience: [tw, mktg]
+
+  - rule: |
+      But consider carefully whether you really need a semicolon or if you'd be better off breaking things into two separate sentences.
+    audience: [tw, mktg]
+
+  - rule: |
+      ### Lists<br>
+      When commas alone won't suffice, you can use semicolons to separate complex items in a series or list.
+    examples:
+      - |
+        **Example:** Our team includes May, a prestigious researcher; Brendan, a tenacious explorer; and Wally, a skilled analyst.
+    audience: [tw, dev, mktg]
+
+
+
