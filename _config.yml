@@ -1,4 +1,4 @@
-title: AK's Style Guide Template # Replace this value with the title of your site.
+title: Style Guide Template # Replace this value with the title of your site.
 description: A Jekyll-based style guide with single-sourcing across multiple audiences. # Replace this value with the description of your choosing.
 url: "https://alexakreizinger.github.io" # Replace this value with the top-level domain of your site. If you're using GitHub Pages without a custom domain, this should be "https://<yourusername>.github.io".
 baseurl: "/styleguidetemplate" # Replace this value with the baseurl of your site. If you're using the default GitHub Pages domain, this should be "/<repositoryname>".
@@ -38,8 +38,8 @@ search:
   # Supports true or false (default)
   button: false
 
-aux_links:
-  "View source on GitHub":
+aux_links: 
+  "AK's Style Guide Template on GitHub":
     - "//github.com/alexakreizinger/styleguidetemplate"
 
 plugins:
