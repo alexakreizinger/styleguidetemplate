@@ -1,11 +1,10 @@
 # A custom GitHub Actions workflow to get around GitHub Pages' restriction against custom plugins. Modeled after the Jekyll's official guide, which you can find here: https://jekyllrb.com/docs/continuous-integration/github-actions/
 name: Build and deploy Jekyll site to GitHub Pages
 
-
 on:
   push:
     branches:
-      - main # or master before October 2020
+      - main
 
 jobs:
   github-pages:
