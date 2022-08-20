@@ -1,4 +1,5 @@
-name: Build and deploy Jekyll site to GitHub Pages #taken from here https://jekyllrb.com/docs/continuous-integration/github-actions/
+# A custom GitHub Actions workflow to get around GitHub Pages' restriction against custom plugins. Modeled after the Jekyll's official guide, which you can find here: https://jekyllrb.com/docs/continuous-integration/github-actions/
+name: Build and deploy Jekyll site to GitHub Pages
 
 on:
   push:
@@ -19,4 +20,4 @@ jobs:
       - uses: helaili/jekyll-action@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          target_branch: 'gh-pages' # had to add this line or it wouldn't work
+          target_branch: 'gh-pages' # This line wasn't present in Jekyll's official guide, but the action won't work without it
