@@ -3,7 +3,7 @@ name: Build and deploy Jekyll site to GitHub Pages #taken from here https://jeky
 on:
   push:
     branches:
-      - main # or master before October 2020
+      - demo # Change this to the name of your primary branch (usually "main")
 
 jobs:
   github-pages:
