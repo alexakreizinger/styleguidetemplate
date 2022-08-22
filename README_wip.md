@@ -1,52 +1,39 @@
 <a name="readme-top"></a>
 # AK's Style Guide Template
 
-A template for building Jekyll-based style guides that use Liquid tags and YAML files to single-source style rules across multiple audiences. For more information about why this exists and how it works, check out the [demo site](https://alexakreizinger.github.io/styleguidetemplate/) generated from this repository. 
+A template for building Jekyll-based style guides that use Liquid tags and YAML files to single-source style rules across multiple audiences. For an example of its output, check out the [demo site](https://alexakreizinger.github.io/styleguidetemplate/) generated from this repository. 
 
 <details>
   <summary>Table of contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
+
+[PUT TABLE OF CONTENTS HERE!!]
+
 </details>
+
+## About this template
+
+[WRITE ABOUT SECTION]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Getting started
 
 ### Requirements
-Since this template is designed to function entirely within GitHub Pages, there are technically no requirements to use it; you can make all of your changes directly within GitHub if you so choose—though this may not be advisable (or practical). However, if you'd like run a staging site locally to preview changes before committing them (which I strongly recommend), you'll need to [install Jekyll](https://jekyllrb.com/docs/installation/).
+Since this template is designed to function entirely within GitHub Pages, there are technically no requirements for using it; you can make all of your changes directly within GitHub if you so choose—though this may not be advisable (or practical). However, if you'd like build a staging site locally to preview changes before committing them (which I strongly recommend), you'll need to [install Jekyll](https://jekyllrb.com/docs/installation/).
 
 ### Installation 
 
 To build your own style guide from this template:
 
-1. Clone this repo. 
+1. Clone this repo. (You only need to clone the `main` branch.)
 2. Modify the following values in `_config.yml`:
   ```
-  title: AK's Style Guide Template # 
-  description: A Jekyll-based style guide with single-sourcing across multiple audiences.
-  url: "https://alexakreizinger.github.io" 
-  baseurl: "/styleguidetemplate"
+  title: <the title of your site>
+  description: <the description for your site>
+  url: <the top-level domain of your site (e.g., "https://username.github.io")>
+  baseurl: <the baseurl of your site (e.g., "styleguide")>
   ```
 3. If you're using GitHub Pages, follow the instructions in the **Hosting with GitHub Pages** section below.
-
 
 ### Theme customization
 This template uses the [Just the Docs](https://github.com/just-the-docs/just-the-docs) Jekyll theme, but you can modify it to use any theme of your choosing. However, the template was built with the Just the Docs theme in mind, so changing the theme may require you to override and revise a bunch of stuff that I hadn't anticipated—customize at your own risk!
