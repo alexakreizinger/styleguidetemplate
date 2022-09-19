@@ -18,8 +18,6 @@ audience: all
 {:toc}
 </details>
 
-![construction pikachu]({{ site.url }}{{ site.baseurl }}/assets/images/construction.gif)
-
 {% assign file = site.data.stylerules.company_terminology %}
 
 {% include get_all_rules.md filename=file %}
