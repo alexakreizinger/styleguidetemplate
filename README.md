@@ -6,9 +6,33 @@ This template is a [Jekyll](https://jekyllrb.com/)-based framework that relies o
 > :bulb: The actual style rules and other content included in this template are merely placeholders—you can (and should!) override them with your organization's unique style guidelines. For more information, see [Add your own content](#add-your-own-content).
 
 ## Table of contents
-*
-* 
-* 
+* [About](#about)
+    * [Why this exists](#why-this-exists)
+    * [How it works](#how-it-works)
+    * [Style rules: YAML, Liquid, & you](#style-rules-yaml-liquid--you)
+        * [Audiences](#audiences)
+        * [Featured rules](#featured-rules)
+    * [Scalability](#scalability)
+* [Quickstart](#quickstart)
+    * [Host with GitHub Pages](#host-with-github-pages)
+    * [Preview your changes locally](#preview-your-changes-locally)
+* [Add your own content](#add-your-own-content)
+    * [Create and edit rules](#create-and-edit-rules)
+        * [Add a new ruleset](#add-a-new-ruleset)
+        * [Edit an existing ruleset](#edit-an-existing-ruleset)
+    * [Create and edit pages](#create-and-edit-pages)
+        * [Add a new audience landing page](#add-a-new-audience-landing-page)
+        * [Add a new audience ruleset page](#add-a-new-audience-ruleset-page)
+        * [Add a new audience-agnostic page](#add-a-new-audience-agnostic-page)
+        * [Edit an existing page](#edit-an-existing-page)
+    * [Create a new audience](#create-a-new-audience)
+        * [Name your audience](#name-your-audience)
+        * [Add new audience-specific pages](#add-new-audience-specific-pages)
+        * [Add new audience tags to existing ruleset files](#add-new-audience-tags-to-existing-ruleset-files)
+* [Directory structure](#directory-structure)
+* [Theming and site customization](#theming-and-site-customization)
+* [License](#license)
+* [Contact](#contact)
 
 ## About
 Different kinds of writing rely on different style conventions. That’s where this style guide template comes in—by segmenting a single set of rules into multiple discrete audiences, you can maintain a unified style within your organization *and* make it easy for writers of all stripes to find guidelines that are relevant to their needs. 
@@ -31,7 +55,6 @@ This template strikes a balance between the need to maintain discrete rulesets f
 As such, if you ever need to update a rule, you’d only need to edit the YAML file where the rule is single-sourced instead of painstakingly combing through three separate sections where it could ostensibly appear.
 
 ### How it works
-
 In a nutshell, this style guide template uses a combination of YAML files, Liquid variables, and Jekyll `include` tags to turn a collection of style rulesets into a mini database. Different pages of the [demo site](https://alexakreizinger.github.io/styleguidetemplate/) can then draw upon this database to fetch relevant rules.
 
 The sequence of events is essentially as follows:
@@ -47,7 +70,6 @@ The sequence of events is essentially as follows:
 In practice, the process of using `include` tags to display content on pages is a *bit* more involved than the example above... but not by much. If you'd like to see `include` tags in action, check out [`audience_landing_page_template.md`](/_templates/audience_landing_page_template.md) and [`audience_rule_page_template.md`](/_templates/audience_rule_page_template.md).
 
 ### Style rules: YAML, Liquid, & you
-
 As illustrated by the previous section, everything about this template ultimately goes back to those YAML ruleset files (located in `/_data/stylerules/`), so it's crucial that these files are formatted correctly.
 
 And yes, working with YAML can be a bit tricky at times (so many indents! so much whitespace!), but the upsides here are twofold: (1) since Liquid does the heavy lifting and fetches rules automatically, these YAML rulesets are usually the only thing you'll need to edit whenever you need to add/update/remove rules; and (2) when you update a rule in the YAML file, you'll only need to update the rule one time rather than multiple times for multiple audiences.
@@ -67,7 +89,7 @@ For example, if a rule applies to the Marketers and Technical Writers audiences,
     audience: [tw, mktg]
 ```
 
-Currently, this template has three audiences, but you could [scale](#scalability) your own style guide site incorporate five or ten or even thirty audiences. The three current audiences are:
+Currently, this template has three audiences, but you could [scale](#scalability) your own style guide site incorporate five or ten or even thirty audiences. The three default audiences are:
 
 * [Developers](https://alexakreizinger.github.io/styleguidetemplate/dev/) (`dev`)
 * [Marketers](https://alexakreizinger.github.io/styleguidetemplate/mktg/) (`mktg`)
@@ -116,7 +138,7 @@ For a more detailed overview of how and when to use featured rules, check out [`
 ### Scalability
 Although I designed this template to include three [audiences](#audiences), seven [YAML ruleset files], and two audience-agnostic pages ([General Principles](https://alexakreizinger.github.io/styleguidetemplate/general/) and [Style Checklist](https://alexakreizinger.github.io/styleguidetemplate/checklist/)), none of these are fixed traits. You can scale your own style guide site to encompass as much content and as many audiences as you need—and, crucially, scaling your style guide won't require you to dismantle and rebuild any content you've already added.
 
-For more information, see [Create and edit rules](#create-and-edit-rules), [Create and edit pages](#create-and-edit-pages), and [Create and edit audiences](#create-new-audiences).
+For more information, see [Create and edit rules](#create-and-edit-rules), [Create and edit pages](#create-and-edit-pages), and [Create a new audience](#create-a new-audience).
 
 ([return to table of contents](#table-of-contents))
 
@@ -246,7 +268,7 @@ On the other hand, audience-agnostic pages (like [`general_principles.md`](/page
 <details>
 <summary>
 
-### Create new audiences
+### Create a new audience
 </summary>
 
 #### Name your audience
@@ -347,13 +369,11 @@ You're also welcome to modify your own style guide site to use the Jekyll theme 
 ([return to table of contents](#table-of-contents))
 
 ## License
-
 AK's Style Guide Template is distributed under the GNU General Public License. For more information, see `LICENSE.md`.
 
 ([return to table of contents](#table-of-contents))
 
 ## Contact
-
 This template was created by [Alexa Kreizinger](https://alexakreizinger.com/). If you have any questions, concerns, or general feedback about this template, feel free to reach out to me at alexakreizinger@gmail.com. 
 
 ([return to table of contents](#table-of-contents))
