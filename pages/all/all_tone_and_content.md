@@ -18,6 +18,6 @@ audience: all
 {:toc}
 </details>
 
-{% assign file = site.data.stylerules.tone-and-content %}
+{% assign file = site.data.stylerules.tone_and_content %}
 
 {% include get_all_rules.md filename=file %}
