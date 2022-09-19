@@ -67,7 +67,7 @@ The sequence of events is essentially as follows:
 <br>`{% include get_rules_for_audience.md filename='site.data.stylerules.punctuation.yml' audience='dev' %}`
 <br>Let's assume that only nine of the fifteen rules included in that YAML file apply to the Developers audience. By using that simple `include` tag on a Developers-specific page, you can automatically fetch all nine of those rules and display them with a single line of code!
 
-In practice, the process of using `include` tags to display content on pages is a *bit* more involved than the example above... but not by much. If you'd like to see `include` tags in action, check out [`audience_landing_page_template.md`](/_templates/audience_landing_page_template.md) and [`audience_rule_page_template.md`](/_templates/audience_rule_page_template.md).
+In practice, the process of using `include` tags to display content on pages is a *bit* more involved than the example above... but not by much. If you'd like to see `include` tags in action, check out [`audience_landing_page_template.md`](/_templates/audience_landing_page.template.md) and [`audience_rule_page_template.md`](/_templates/audience_rule_page_template.md).
 
 ### Style rules: YAML, Liquid, & you
 As illustrated by the previous section, everything about this template ultimately goes back to those YAML ruleset files (located in `/_data/stylerules/`), so it's crucial that these files are formatted correctly.
@@ -104,7 +104,7 @@ For example, the Developers section of the demo site has a *Developers* landing 
 
 Even though the Technical Writers section of the demo site also has a *Grammar* subpage, the *Developers > Grammar* subpage and the *Technical Writers > Grammar* subpage aren't identical. Many rules between them overlap, but they're fetching rules based on different `audience` values, which means that rules that apply to one audience may not apply to the other (and vice versa).
 
-For a more detailed overview of how audience pages are formatted, check out [`audience_landing_page_template.md`](/_templates/audience_landing_page_template.md) and [`audience_rule_page_template.md`](/_templates/audience_rule_page_template.md).
+For a more detailed overview of how audience pages are formatted, check out [`audience_landing_page_template.md`](/_templates/audience_landing_page.template.md) and [`audience_rule_page_template.md`](/_templates/audience_rule_page_template.md).
 
 #### Featured rules
 
@@ -133,12 +133,12 @@ Note that in the example above, both the `tw` and `dev` audiences will count thi
 
 > :bulb: To ensure that audience landing pages are formatted correctly, make sure that every ruleset has at least one featured rule that applies to each audience (unless, like in the Marketers example above, the ruleset doesn't have any applicable rules for that audience at all). However, as a rule of thumb, try to include anywhere from three to ten featured rules per audience per ruleset.
 
-For a more detailed overview of how and when to use featured rules, check out [`audience_landing_page_template.md`](/_templates/audience_landing_page_template.md) and [`rule_template_with_examples.yml`](/_templates/rule_template_with_examples.yml).
+For a more detailed overview of how and when to use featured rules, check out [`audience_landing_page_template.md`](/_templates/audience_landing_page.template.md) and [`rule_template_with_examples.yml`](/_templates/rule_template_with_examples.yml).
 
 ### Scalability
 Although I designed this template to include three [audiences](#audiences), seven [YAML ruleset files], and two audience-agnostic pages ([General Principles](https://alexakreizinger.github.io/styleguidetemplate/general/) and [Style Checklist](https://alexakreizinger.github.io/styleguidetemplate/checklist/)), none of these are fixed traits. You can scale your own style guide site to encompass as much content and as many audiences as you need—and, crucially, scaling your style guide won't require you to dismantle and rebuild any content you've already added.
 
-For more information, see [Create and edit rules](#create-and-edit-rules), [Create and edit pages](#create-and-edit-pages), and [Create a new audience](#create-a new-audience).
+For more information, see [Create and edit rules](#create-and-edit-rules), [Create and edit pages](#create-and-edit-pages), and [Create a new audience](#create-a-new-audience).
 
 ([return to table of contents](#table-of-contents))
 
@@ -195,7 +195,7 @@ To add an entirely new ruleset file:
 
 1. Create a new YAML file in `_data/stylerules/`. (You can use [`rule_template_generic.yml`](/_templates/rule_template_generic.yml) as a base.)
 2. Add content to your ruleset file.
-3. For any audiences to whom this ruleset is applicable, add the necessary Liquid blocks to add [featured rules](#featured-rules) to that audience's landing page. (See [`audience_landing_page_template.md`](/_templates/audience_landing_page_template.md) for guidance.)
+3. For any audiences to whom this ruleset is applicable, add the necessary Liquid blocks to add [featured rules](#featured-rules) to that audience's landing page. (See [`audience_landing_page_template.md`](/_templates/audience_landing_page.template.md) for guidance.)
 4. For any audiences to whom this ruleset is applicable, [add a new audience ruleset page](#add-a-new-audience-ruleset-page) for that ruleset.
 
 #### Edit an existing ruleset
@@ -210,7 +210,7 @@ There's no need to edit the audience pages where these rulesets appear; if every
 
 #### Add a new audience landing page
 
-1. Create a new Markdown file in the folder for the applicable audience. (You can use [`audience_landing_page_template.md`](/_templates/audience_landing_page_template.md) as a base.)
+1. Create a new Markdown file in the folder for the applicable audience. (You can use [`audience_landing_page_template.md`](/_templates/audience_landing_page.template.md) as a base.)
 2. Modify the following keys in the page's [front matter](https://jekyllrb.com/docs/front-matter/):
 * `permalink`
 * `title`
@@ -251,7 +251,7 @@ Under most circumstances, you shouldn't edit audience landing pages or audience 
 
 * If you'd like to edit the content that appears on an audience page, [edit any applicable ruleset file(s)](#edit-an-existing-ruleset).
 * If you'd like to modify an audience page's title, permalink, or location in the navigation bar, edit that page's [front matter](https://jekyllrb.com/docs/front-matter/).
-* If your Liquid formatting isn't working properly and you *do* need to edit an audience page directly, consult [`audience_landing_page_template.md`](/_templates/audience_landing_page_template.md) and [`audience_rule_page_template.md`](/_templates/audience_rule_page_template.md) for guidance.
+* If your Liquid formatting isn't working properly and you *do* need to edit an audience page directly, consult [`audience_landing_page_template.md`](/_templates/audience_landing_page.template.md) and [`audience_rule_page_template.md`](/_templates/audience_rule_page_template.md) for guidance.
 
 On the other hand, audience-agnostic pages (like [`general_principles.md`](/pages/general_principles.md)) don't use single-sourced data; you can edit these pages directly without issue.
 
@@ -259,7 +259,7 @@ On the other hand, audience-agnostic pages (like [`general_principles.md`](/page
 
 #### Name your audience
 
-* Choose a simple "codename" for your audience. You'll need to use this value in audience page permalinks and ruleset audience tags, so choose a name that's short and memorable.<br>For example, if you'd like to add a UX Designers audience, you might choose to use an audience value of `ux` in permalinks and audience tags.
+* Choose a simple "codename" for your audience. You'll need to use this value in audience page permalinks and ruleset audience tags, so choose a name that's short and memorable. For example, if you'd like to add a UX Designers audience, you might choose to use an audience value of `ux` in permalinks and audience tags.
 
 #### Add new audience-specific pages 
 
@@ -268,7 +268,7 @@ On the other hand, audience-agnostic pages (like [`general_principles.md`](/page
 3. In this folder, [create a ruleset page](#add-a-new-audience-ruleset-page) for each ruleset that applies to your audience.
 
 #### Add new audience tags to existing ruleset files
-(for applicable files)
+
 1. Decide which rulesets (if any) in `_data/stylerules` are relevant to your audience.
 2. [Edit existing ruleset files](#edit-an-existing-ruleset) to add new tags (using the [audience name](#name-your-audience) you chose earlier) to all of the existing rules that apply to your audience. <br>For example, a rule that currently has the key-value pair `audience: [tw, dev]` would be changed to `audience: [tw, dev, ux]`.
 
@@ -299,7 +299,7 @@ The following outline describes the purpose of each file in this template repo a
 
 * [`/_templates/`](/_templates/): Various files that you can use as a base for creating new pages and files within the broader style guide template; you can also use them as explainers to help you edit exiting pages and files. 
 
-    * [`audience_landing_page_template.md`](/_templates/audience_landing_page_template.md): A template for an audience landing page (e.g., `/devs/`). This file is heavily annotated to provide an in-depth explanation of how landing pages work.
+    * [`audience_landing_page_template.md`](/_templates/audience_landing_page.template.md): A template for an audience landing page (e.g., `/devs/`). This file is heavily annotated to provide an in-depth explanation of how landing pages work.
 
     * [`audience_rule_page_template.md`](/_templates/audience_rule_page_template.md): A template for an audience rule page (e.g., `/devs/punctuation/`). This file is heavily annotated to provide an in-depth explanation of how rule pages work.
 
@@ -317,15 +317,15 @@ The following outline describes the purpose of each file in this template repo a
 
     * [`/all/`](/pages/all/): This folder contains [hidden pages](https://alexakreizinger.github.io/styleguidetemplate/all/) that display all style rules in your ruleset files. These pages aren't accessible from the demo site's navigation bar, but you can see them if you manually visit their respective URLs. 
 
-    * [`/dev/`](/pages/dev/): This folder contains the [Developers](https://alexakreizinger.github.io/styleguidetemplate/dev/) landing page and subpages that display developer-specific style rules. For more information, see [Audiences](#audiences) and [Create and edit](#create-and-edit-pages).
+    * [`/dev/`](/pages/dev/): This folder contains the [Developers](https://alexakreizinger.github.io/styleguidetemplate/dev/) landing page and subpages that display developer-specific style rules. For more information, see [Audiences](#audiences) and [Create and edit pages](#create-and-edit-pages).
 
-    * [`/mktg/`](/pages/mktg/): This folder contains the [Marketers](https://alexakreizinger.github.io/styleguidetemplate/mktg/) landing page and subpages that display marketer-specific style rules. For more information, see [Audiences](#audiences) and [Create and edit](#create-and-edit-pages).
+    * [`/mktg/`](/pages/mktg/): This folder contains the [Marketers](https://alexakreizinger.github.io/styleguidetemplate/mktg/) landing page and subpages that display marketer-specific style rules. For more information, see [Audiences](#audiences) and [Create and edit pages](#create-and-edit-pages).
 
-    * [`/tw/`](/pages/tw/): This folder contains the [Technical Writers](https://alexakreizinger.github.io/styleguidetemplate/tw/) landing page and subpages that display technical writer-specific style rules. For more information, see [Audiences](#audiences) and [Create and edit](#create-and-edit-pages).
+    * [`/tw/`](/pages/tw/): This folder contains the [Technical Writers](https://alexakreizinger.github.io/styleguidetemplate/tw/) landing page and subpages that display technical writer-specific style rules. For more information, see [Audiences](#audiences) and [Create and edit pages](#create-and-edit-pages).
 
     * [`general_principles.md`](/pages/general_principles.md): The [General Principles](https://alexakreizinger.github.io/styleguidetemplate/general/) page, which includes basic style principles that apply to all audiences. This is an audience-agnostic page; it does not use single-sourced data.
     
-    * [`style-checklist.md`](/pages/style-checklist.md): The [Style Checklist](https://alexakreizinger.github.io/styleguidetemplate/checklist/) page, which includes a collection of "minimum viable docs" style guidelines for all audiences. This is an a audience-agnostic page; it does not use single-sourced data.
+    * [`style_checklist.md`](/pages/style_checklist.md): The [Style Checklist](https://alexakreizinger.github.io/styleguidetemplate/checklist/) page, which includes a collection of "minimum viable docs" style guidelines for all audiences. This is an a audience-agnostic page; it does not use single-sourced data.
 
 * [`.gitignore`](/.gitignore): A standard gitignore file. You can edit or delete this file to suit your own needs.
 
@@ -353,7 +353,7 @@ You're also welcome to modify your own style guide site to use the Jekyll theme 
 ([return to table of contents](#table-of-contents))
 
 ## License
-AK's Style Guide Template is distributed under the GNU General Public License. For more information, see `LICENSE.md`.
+AK's Style Guide Template is distributed under the GNU General Public License. For more information, see [`LICENSE.md`](/LICENSE.md).
 
 ([return to table of contents](#table-of-contents))
 
