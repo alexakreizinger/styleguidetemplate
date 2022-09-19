@@ -1,13 +1,14 @@
 ---
-# This template is meant to demonstrate how audience-specific rule pages should be formatted. This rule page will auto-generate all rules from the `punctuation.yml` file that have been tagged for the `dev` audience.
+# This template is meant to demonstrate how audience-specific rule pages should be formatted. The example rule page outlined here will auto-generate all rules from the `punctuation.yml` file that have been tagged for the `dev` audience.
 
-layout: default # Don't change this (unless you really want to, I guess).
+layout: default # Don't change this.
 permalink: /dev/punctuation/ # This permalink is composed of two parts. The first part should match the landing page's associated audience value (`/dev/`, `/tw/`, or `/mktg/`), and the second part should be a short slug that describes the content of the page's ruleset (in this example, `punctuation/`). Make sure to include a slash before the audience value and after the page slug.
 # Additionally, make sure the descriptive slug is consistent with the slug used for any other audiences that draw upon the same ruleset; for example, the equivalent page for technical writers should have a permalink of `/tw/punctuation/`. If you don't maintain this consistency, things will break!
 title: Punctuation # You can give the landing page any title you want, but the simplest option is to write out the name of the ruleset.
 parent: Developers # This value needs to match the `title` value for the audience's landing page; it's how the theme generates parent/children files in the navigation sidebar.
 audience: dev # This should match the landing page's associated audience value: `dev`, `tw`, or `mktg`.
-nav_order: 3 # This value dictates the landing page's position on navigation sidebar. You can change this value to suit whatever page hierarchy you'd like. 
+nav_order: 5 # This value dictates the landing page's position on navigation sidebar. You can change this value to suit the page hierarchy of your choosing.
+# {{page.title}} 
 ---
 # {{page.title}} 
 

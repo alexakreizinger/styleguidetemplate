@@ -1,20 +1,20 @@
-# This template is meant to be a bare-bones template that you can quickly copy/paste to create your own rulesets. If you'd like to read a more in-depth explanation of how YAML rulesets work, check out `rule_template_with_examples.yml`.
+# This file is a bare-bones template that you can quickly copy/paste to create and edit rulesets. If you'd like to read a more in-depth explanation of how YAML rulesets work, check out `rule_template_with_examples.yml`.
 
 description: PAGE DESCRIPTION
 
-rules: 
-# === don't duplicate any of the keys above this line—each ruleset file should only have a single `description` key and a single `rules` key ===
+content: 
+# === don't duplicate any of the keys above this line—each ruleset file should only have a single `description` key and a single `content` key ===
 
 # === the keys below this line can be copy/pasted ad infinitum to create rulesets as long or as short as you'd like ===
 
 - section: SECTION NAME
-  topics: 
-  # copy/paste `section` blocks as needed—just make sure to include each sections's rules within a single `topics`key
+  sectionrules: 
+  # copy/paste `section`/`sectionrules` blocks as needed—just make sure to include each section's rules within a single `sectionrules` key
 
   - rule: | # copy/paste 'rule' blocks as needed
       ### RULE WITH A TITLE<br> 
       CONTENT OF THE RULE
-    audience: [tw, dev, mktg] # add/delete audiences as needed
+    audience: [tw, dev, mktg] # add/delete audiences for each rule as needed, just make sure they're contained within a single array
 
   - rule: |
       CONTENT OF A RULE WITH NO TITLE<br>
@@ -24,7 +24,7 @@ rules:
   - rule: |
       ### THIS RULE HAS A TITLE AND ALSO EXAMPLES<br>
       SEE BELOW FOR THE EXAMPLES
-    examples: # copy/paste `example` blocks as needed
+    examples: # copy/paste individual list items for each example as needed; each `examples` key can contain one or more list items
       - |
         AN EXAMPLE
       - |
@@ -35,18 +35,18 @@ rules:
   - rule: |
       ### THIS RULE HAS A TITLE AND EXAMPLES AND IS 'FEATURED'<br>
       THE 'FEATURED' LINK IS INCLUDED BELOW AND USES LIQUID TAGS IN ITS URL
-    examples: # copy/paste `example` blocks as needed
+    examples:
       - |
         AN EXAMPLE
       - |
         ANOTHER EXAMPLE<br>
         THIS EXAMPLE HAS MULTIPLE LINES
     audience: [tw, dev, mktg]
-    featured: | # copy/paste `featured` blocks as needed, just make sure to swap out "SECTION" and "HEADING-GOES-HERE"
+    featured: | # copy/paste `featured` blocks as needed, just make sure to swap out "SECTION" and "HEADING-GOES-HERE" with the correct values
       [A SHORT DESCRIPTION OF THE RULE.]({{site.baseurl}}{{page.permalink}}SECTION/#HEADING-GOES-HERE)
 
 - section: ANOTHER SECTION NAME
-  topics: 
+  sectionrules: 
 
   - rule: |
       ### THIS RULE HAS A TITLE AND EXAMPLES AND IS 'FEATURED'<br>
@@ -86,5 +86,3 @@ rules:
     audience: [tw, dev, mktg]
     featured: |
       [A SHORT DESCRIPTION OF THE RULE.]({{site.baseurl}}{{page.permalink}}SECTION/#HEADING-GOES-HERE)
-
-

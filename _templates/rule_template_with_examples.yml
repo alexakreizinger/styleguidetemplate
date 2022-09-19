@@ -1,26 +1,35 @@
-# This template is meant to provide an in-depth explanation of how YAML rulesets work. If you'd like a more bare-bones template that you can quickly copy/paste to create your own rulesets, check out `rule_template_generic.yml`. 
+# This file provides an in-depth explanation of how YAML rulesets work. If you'd like a more bare-bones template that you can quickly copy/paste to create and edit rulesets, check out `rule_template_generic.yml`. 
 
 description: Guidelines for using those familiar dots, dashes, and squiggles.
-# Each ruleset file should only have one description. This description will correspond to the page where that ruleset is being displayed—for example, punctuation.yml corresponds to the /punctuation page, so its description should reflect this.
+# Each ruleset file should only have one description. This description will be displayed on the page(s) where that ruleset is being displayed—for example, punctuation.yml corresponds to the /<audience>/punctuation pages.
 
-rules: 
-# Each ruleset file should only have one 'rules' key. 
+content: 
+# Each ruleset file should only have one 'content' key.
+# Note that the content of these ruleset files will always be evaluated from top to bottom. As such, if you want your pages to include sections (or the rules in each section) arranged in a particular order, you'll need to order them accordingly in the YAML file itself. For example, I've chosen to arrange the `section` keys in this template file in alphabetical order to ensure that the corresponding pages' h2 headers will also be arranged in alphabetical order.
 
 - section: Colons
-# Most ruleset files will have more than one 'section' key. This section name will automatically appear as an h2  header on the page where the ruleset file is displayed—do NOT add the `##` to this YAML file. You should use sections to group similar groups of rules together.
+# Most ruleset files have more than one 'section' key. This section name will automatically appear as an h2 header on the page where the ruleset file is displayed—do NOT add the `##` in the section value itself.
+# Sections help group similar rules together; it's also possible to have a section with only one rule (like this one).
 
-  topics: # Each section's rules should be contained within a single `topics` key. This `topics` key only contains a single rule because we only have one rule about colons.
+  sectionrules: 
+  # Each section's rules should be contained within a single `sectionrules` key. This particular `sectionrules` key only contains a single rule because we only have one rule about colons, but if we had multiple rules about colons, all of them would still need to correspond to a single `sectionrules` key.
 
-  - rule: | # If you'd like to add a title to a rule, include that title in the body of the rule itself with h3 syntax (`###`) followed by `<br>`. You must actually add the h3 syntax or the rule won't have a title. You can also use `<br>` to create line breaks at any point in the rule (or its examples).
+  - rule: |
       ### Colons and capitalization<br> 
       If you're using a colon within a self-contained sentence, the first word following the colon should remain lowercase (unless that word is a proper noun).
-    examples: # Each example will automatically be generated with a bullet point in front of it—do NOT add the bullet point in the body of the example itself (unless you're, for example, creating a sub-list within the rule or something similar). Rules can include one or multiple examples, or no examples at all.
+    # If you'd like to add a title to a rule, use h3 syntax (`###`) to include that title in the body of the rule itself, then use `<br>` to create a line break.
+    # (You can also use `<br>` as you see fit to create line breaks within the body of the rule or any of its examples.)
+    examples: 
       - |
         **Example:** We use three metrics in our analysis: quality, cost, and speed.
-    audience: [tw, mktg] # Possible audience values are `tw`, `dev`, and `mktg`. You can add or delete audiences for each rule as needed. Editing a rule's audience values will automatically add/remove that rule to the audience page that draws upon a specified ruleset (in this case, `<audience>/punctuation`.)
+    # Each example will automatically be generated with a bullet point in front of it—do NOT add the bullet point in the body of the example itself (unless you're actually trying to create an example with a bulleted list in it, which is a different story). 
+    # Rules can include one or multiple examples, or no examples at all. However, if a rule contains no examples, you can just omit the `examples` key entirely to keep things clean.
+    audience: [tw, mktg] 
+    # Possible audience values are `tw`, `dev`, and `mktg`. The order of these values doesn't matter as long as all relevant values are included within a single array.
+    # You can add or delete audiences for each rule as needed. Editing a rule's audience values will automatically add/remove that rule to the audience page that draws upon a specified ruleset For example, this particular rule is currently configured to appear in `/tw/punctuation/` and `/dev/punctuation/`.
 
 - section: Commas
-  topics:
+  sectionrules:
   # This is a new section called "Commas" to group rules about commas.
 
   - rule: |
@@ -33,8 +42,10 @@ rules:
         **Short:** We worked too quickly and it all fell apart.
     audience: [tw, mktg]
 
-  - rule: | # Rules aren't required to have titles—this one doesn't have a title at all. In this case, the content of the rule still falls under the "Clauses" grouping of the rule preceding it, so omitting a title here makes each rule flow more easily into one another. This kind of flow is useful if you'd like to chain together multiple rule explanations with their own respective examples (as seen here) or if different rules in the group have different audiences—for example, the first rule might be broad enough to apply to all audiences, but its subsequent rules might only cater to one or two specialized audiences.
+  - rule: |
       If a dependent clause and an independent clause are separated by a coordinating conjunction, don't use a comma unless the sentence would be unclear without it.
+    # Rules aren't required to have titles—this rule doesn't have a title at all. 
+    # Since the content of the rule still falls under the "Clauses" grouping of the rule preceding it, I opted to omit an h3 header here to make the preceding rule and the current rule flow together. This kind of flow can be useful if you'd like to chain together multiple rule explanations with their own respective examples (as seen here).
     examples:
       - |
         **Clear without comma:** The vacuum of space is cold and will kill you almost instantly. 
@@ -53,19 +64,22 @@ rules:
   - rule: |
       ### Serial commas<br>
       Use serial commas (also known as *Oxford commas*).
-    examples: # This rule has two examples.
+    examples:
       - |
         **No:** I love my parents, Godzilla and Wonder Woman.
       - |
         **Yes:** I love my parents, Godzilla, and Wonder Woman.
+      # This rule has two examples.
     audience: [tw, dev, mktg]
-    featured: | # If you'd like a rule to be featured on an audience's landing page, you can add the `featured` key as follows to create a hyperlink from a short description. Just make sure to update the actual description and update the URL to replace "punctuation" with the name of the relevant page and "#serial-commas" with the specific header to link to. 
+    featured: |
       [Use serial commas.]({{site.baseurl}}{{page.permalink}}punctuation/#serial-commas)
+    # If you'd like a rule to be featured on an audience's landing page, you can add the `featured` key to create a hyperlink from a short description. 
+    # In this example, "{{site.baseurl}}" and "{{page.permalink}}" will automatically be replaced by the necessary values, but I've specified "punctuation" as the URL of the page(s) that this YAML ruleset corresponds to and "#serial-commas" as the header of rule in question. (This is one reason why it's handy to create h3 headers for rules!)
 
-# The rest of this template is presented without additional comments. Everything included below follows the same principles as outlined above, but it may be helpful to see more rules in action without as many comments clogging up the syntax. ;) Thanks for reading, and happy style guide-ing!
+# The rest of this template is presented without additional comments. Everything included below follows the same principles as outlined above, but it may be helpful to see more rules in action without so many comments clogging up the YAML syntax. ;) 
 
 - section: Dashes and hyphens
-  topics:
+  sectionrules:
 
   - rule: |
       ### Em dashes<br>
@@ -111,7 +125,7 @@ rules:
     audience: [tw, mktg]
 
 - section: Parentheses
-  topics:
+  sectionrules:
 
   - rule: |
       ### Avoid critical information<br>
@@ -134,7 +148,7 @@ rules:
     audience: [tw, mktg]
 
 - section: Semicolons
-  topics:
+  sectionrules:
 
   - rule: |
       ### Avoid overuse<br>
@@ -167,6 +181,3 @@ rules:
       - |
         **Example:** Our team includes May, a prestigious researcher; Brendan, a tenacious explorer; and Wally, a skilled analyst.
     audience: [tw, dev, mktg]
-
-
-
