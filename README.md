@@ -1,7 +1,7 @@
 # AK's Style Guide Template
-A style guide template that uses YAML files to single-source style rules across multiple audiences. For an example of its output, check out the [demo site](https://alexakreizinger.github.io/styleguidetemplate/) generated from this repository. 
+A Jekyll-based style guide template with single-sourcing across multiple audiences. For an example of its output, check out the [demo site](https://alexakreizinger.github.io/styleguidetemplate/) generated from this repository. 
 
-This template is a [Jekyll](https://jekyllrb.com/)-based framework that relies on vividh's [Liquify](https://github.com/vividh/liquify) plugin and the [Just the Docs](https://github.com/just-the-docs/just-the-docs) Jekyll theme (with some minor [customizations](#theming-and-site-customization)).
+This template relies on vividh's [Liquify](https://github.com/vividh/liquify) plugin and the [Just the Docs](https://github.com/just-the-docs/just-the-docs) Jekyll theme (with some minor [customizations](#theming-and-site-customization)).
 
 > :bulb: The actual style rules and other content included in this template are merely placeholders—you can (and should!) override them with your organization's unique style guidelines. For more information, see [Add your own content](#add-your-own-content).
 
@@ -35,7 +35,7 @@ This template is a [Jekyll](https://jekyllrb.com/)-based framework that relies o
 * [Contact](#contact)
 
 ## About
-Different kinds of writing rely on different style conventions. That’s where this style guide template comes in—by segmenting a single set of rules into multiple discrete audiences, you can maintain a unified style within your organization *and* make it easy for writers of all stripes to find guidelines that are relevant to their needs. 
+Different kinds of writing rely on different style conventions. That’s where this style guide template comes in: by segmenting a single set of rules into multiple discrete audiences, you can maintain a unified style within your organization *and* make it easy for writers of all stripes to find guidelines that are relevant to their needs. 
 
 The [demo site](https://alexakreizinger.github.io/styleguidetemplate/) generated from this template includes the following pages:
 
@@ -48,7 +48,7 @@ This demo site provides a basic framework that you can use to use to [set up the
 ### Why this exists
 Style guides are a must-have resource for any major organization—but what happens when you need to maintain multiple style guides for different audiences?
 
-For example, guidelines that apply to someone designing a user interface might not apply to someone writing press releases, so it doesn’t make sense to enforce a single set of style rules for both. On the other hand, other companywide styles certainly *will* apply to both audiences, and it can be tough to keep these rules in sync if they’re sourced from entirely separate guides.
+For example, guidelines that apply to someone designing a user interface might not apply to someone writing press releases, so it doesn’t make sense to enforce a single set of style rules for both. On the other hand, certain companywide styles certainly *will* apply to both audiences, and it can be tough to keep these rules in sync if they’re sourced from entirely separate guides.
 
 This template strikes a balance between the need to maintain discrete rulesets for separate audiences and the need to unify certain overlapping rules that apply to multiple audiences. If you browse the [demo site](https://alexakreizinger.github.io/styleguidetemplate/) generated from this repository, you may notice that certain style rules appear multiple times throughout the guide, but each rule was only recorded in a single location. By using an audience-based tagging system, rules are automatically populated in any and all applicable sections (i.e., [Developers](https://alexakreizinger.github.io/styleguidetemplate/dev/), [Marketers](https://alexakreizinger.github.io/styleguidetemplate/mktg/), and/or [Technical Writers](https://alexakreizinger.github.io/styleguidetemplate/tw/)).
 
@@ -136,7 +136,7 @@ Note that in the example above, both the `tw` and `dev` audiences will count thi
 For a more detailed overview of how and when to use featured rules, check out [`audience_landing_page_template.md`](/_templates/audience_landing_page.template.md) and [`rule_template_with_examples.yml`](/_templates/rule_template_with_examples.yml).
 
 ### Scalability
-Although I designed this template to include three [audiences](#audiences), seven [YAML ruleset files], and two audience-agnostic pages ([General Principles](https://alexakreizinger.github.io/styleguidetemplate/general/) and [Style Checklist](https://alexakreizinger.github.io/styleguidetemplate/checklist/)), none of these are fixed traits. You can scale your own style guide site to encompass as much content and as many audiences as you need—and, crucially, scaling your style guide won't require you to dismantle and rebuild any content you've already added.
+Although I designed this template to include three [audiences](#audiences), seven [YAML ruleset files](#style-rules-yaml-liquid--you), and two audience-agnostic pages ([General Principles](https://alexakreizinger.github.io/styleguidetemplate/general/) and [Style Checklist](https://alexakreizinger.github.io/styleguidetemplate/checklist/)), none of these are fixed traits. You can scale your own style guide site to encompass as much content and as many audiences as you need—and, crucially, scaling your style guide won't require you to dismantle and rebuild any content you've already added.
 
 For more information, see [Create and edit rules](#create-and-edit-rules), [Create and edit pages](#create-and-edit-pages), and [Create a new audience](#create-a-new-audience).
 
