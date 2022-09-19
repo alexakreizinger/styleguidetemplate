@@ -1,8 +1,8 @@
 description: Guidelines about what to say and how to say it.
 
-rules:
+content:
 - section: Aperture Science products
-  topics:
+  sectionrules:
 
   - rule: |
       ### Latency and uptime<br>
@@ -20,7 +20,7 @@ rules:
     audience: [tw, dev]
 
 - section: Tone
-  topics:
+  sectionrules:
 
   - rule: |
       ### Be friendly<br>
@@ -37,7 +37,7 @@ rules:
       [Write for a broad audience, not just for experts.]({{site.baseurl}}{{page.permalink}}tone-and-content/#write-for-non-experts)
 
 - section: Word choice
-  topics:
+  sectionrules:
 
   - rule: |
       ### Filler words<br>

@@ -1,10 +1,10 @@
 
 description: Guidelines for building the grammatical machinery of a sentence.
 
-rules:
+content:
 - section: Abbreviations
 
-  topics:
+  sectionrules:
   - rule: |
       ### Abbreviations as verbs<br>
       Don't use abbreviations or acronyms as verbs.
@@ -42,7 +42,7 @@ rules:
     audience: [tw, dev, mktg]
 
 - section: Active and passive voice
-  topics:
+  sectionrules:
 
   - rule: |
       ### Active voice<br>
@@ -71,7 +71,7 @@ rules:
     audience: [tw, dev, mktg]
 
 - section: Pronouns
-  topics:
+  sectionrules:
 
   - rule: |
       ### First-person pronouns<br>
@@ -151,7 +151,7 @@ rules:
     audience: [tw, mktg]
 
 - section: Sentence structure
-  topics:
+  sectionrules:
 
   - rule: |
       ### *And* and *but*<br>
@@ -169,7 +169,7 @@ rules:
     audience: [tw, mktg]
 
 - section: Spelling
-  topics:
+  sectionrules:
   
   - rule: |
       ### American English<br>
@@ -183,7 +183,7 @@ rules:
     audience: [mktg]
 
 - section: Verbs and tense
-  topics:
+  sectionrules:
 
   - rule: |
       ### Present tense<br>
@@ -224,7 +224,7 @@ rules:
     audience: [tw, dev]
 
 - section: Miscellaneous
-  topics:
+  sectionrules:
 
   - rule: |
       ### Contractions<br>

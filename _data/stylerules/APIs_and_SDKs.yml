@@ -1,8 +1,8 @@
 description: Guidelines for documenting APIs and SDKs.
 
-rules:
+content:
 - section: Best practices
-  topics:
+  sectionrules:
 
   - rule: |
       ### Be descriptive and thorough<br>
@@ -39,7 +39,7 @@ rules:
     audience: [tw, dev]
 
 - section: Classes
-  topics:
+  sectionrules:
 
   - rule: |
       ### Introduce classes...<br>
@@ -61,7 +61,7 @@ rules:
     audience: [tw, dev]
 
 - section: Constants and fields
-  topics:
+  sectionrules:
 
   - rule: |
       ### Describe and link<br>
@@ -69,7 +69,7 @@ rules:
     audience: [tw, dev]
 
 - section: Methods
-  topics:
+  sectionrules:
 
   - rule: |
       ### Introduce methods...<br>
@@ -96,7 +96,7 @@ rules:
     audience: [tw, dev]
 
 - section: Text formatting
-  topics:
+  sectionrules:
 
   - rule: |
       ### Code font<br>

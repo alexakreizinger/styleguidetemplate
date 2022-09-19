@@ -1,8 +1,8 @@
 description: Guidelines for using those familiar dots, dashes, and squiggles.
 
-rules:
+content:
 - section: Colons
-  topics:
+  sectionrules:
 
   - rule: |
       ### Colons and capitalization<br>
@@ -13,7 +13,7 @@ rules:
     audience: [tw, mktg]
 
 - section: Commas
-  topics:
+  sectionrules:
 
   - rule: |
       ### Clauses<br>
@@ -55,7 +55,7 @@ rules:
       [Use serial commas.]({{site.baseurl}}{{page.permalink}}punctuation/#serial-commas)
 
 - section: Dashes and hyphens
-  topics:
+  sectionrules:
 
   - rule: |
       ### Em dashes<br>
@@ -101,7 +101,7 @@ rules:
     audience: [tw, mktg]
 
 - section: Parentheses
-  topics:
+  sectionrules:
 
   - rule: |
       ### Avoid critical information<br>
@@ -124,7 +124,7 @@ rules:
     audience: [tw, mktg]
 
 - section: Semicolons
-  topics:
+  sectionrules:
 
   - rule: |
       ### Avoid overuse<br>

@@ -1,22 +1,21 @@
 description: Guidelines for how to arrange and present the words you write.
 
-rules:
+content:
 - section: Callout boxes
-  topics:
+  sectionrules:
 
   - rule: |
       ### Callout types<br>
-      Callout boxes (sometimes known as *admonitions*) are a great way to highlight important information or notices. There are three main types of callout boxes:
-    examples:
-      - |
-        **Info/Note:** A useful (but not urgent) message. Notes often provide clarifying information, tips and tricks, or additional advice.
-        {: .info }
-      - |
-        **Caution/Careful:** An important, semi-urgent message. Caution notes often invite the reader to slow down or tread carefully.
-        {: .warn }
-      - |
-        **Warning/Danger:** A critical, urgent message. Warning notes often contain information that will lead to a serious error if not followed; readers must heed this message at all costs.
-        {: .danger }
+      Callout boxes (sometimes known as *admonitions*) are a great way to highlight important information or notices. There are three main types of callout boxes:<br>
+
+      **Note/Info:** A useful (but not urgent) message. Notes often provide clarifying information, tips and tricks, or additional advice.
+      {: .note }
+
+      **Caution/Careful:** An important, semi-urgent message. Caution notes often invite the reader to slow down or tread carefully.
+      {: .caution }
+
+      **Warning/Danger:** A critical, urgent message. Warning notes often contain information that will lead to a serious error if not followed; readers must heed this message at all costs.
+      {: .warning }
     audience: [tw, dev]
 
   - rule: |
@@ -30,7 +29,7 @@ rules:
     audience: [tw]
 
 - section: Capitalization
-  topics:
+  sectionrules:
 
   - rule: |
       ### Aperture Science branding<br>
@@ -44,7 +43,7 @@ rules:
     audience: [tw, dev, mktg]
 
 - section: Code samples
-  topics:
+  sectionrules:
 
   - rule: |
       ### Code formatting<br>
@@ -71,7 +70,7 @@ rules:
     audience: [tw, dev]
 
 - section: Images and screenshots
-  topics:
+  sectionrules:
 
   - rule: |
       ### Captions<br>
@@ -94,7 +93,7 @@ rules:
       [Use screenshots sparingly.]({{site.baseurl}}{{page.permalink}}formatting-and-organization/#when-to-use-screenshots)
 
 - section: Links
-  topics:
+  sectionrules:
 
   - rule: |
       ### Helpful hyperlinks<br>
@@ -150,7 +149,7 @@ rules:
     audience: [tw, dev, mktg]
 
 - section: Lists
-  topics:
+  sectionrules:
 
   - rule: |
       ### Introduce lists<br>
@@ -214,7 +213,7 @@ rules:
     audience: [tw, dev]  
 
 - section: Numbers
-  topics:
+  sectionrules:
 
   - rule: |
       ### When to spell out numbers<br>
@@ -255,7 +254,7 @@ rules:
     audience: [tw, mktg]
 
 - section: Procedural instructions
-  topics:
+  sectionrules:
 
   - rule: |
       ### Imperative verbs<br>
@@ -312,7 +311,7 @@ rules:
     audience: [tw]
 
 - section: Tables
-  topics:
+  sectionrules:
 
   - rule: |
       ### Introduce tables<br>
@@ -325,7 +324,7 @@ rules:
     audience: [tw, dev]
 
 - section: Titles and headings
-  topics:
+  sectionrules:
 
   - rule: |
       ### Title capitalization<br>
@@ -374,7 +373,7 @@ rules:
     audience: [tw, dev]
 
 - section: Miscellaneous
-  topics:
+  sectionrules:
 
   - rule: |
       ### Avoid walls of text<br>

@@ -1,8 +1,8 @@
 description: Guidelines for describing the way users interact with our products.
 
-rules:
+content:
 - section: Best practices
-  topics:
+  sectionrules:
 
   - rule: |
       ### Bold UI elements<br>
@@ -53,7 +53,7 @@ rules:
     audience: [tw, dev]
 
 - section: Interacting with UIs
-  topics:
+  sectionrules:
 
   - rule: |
       ### Angle brackets<br>
@@ -85,7 +85,7 @@ rules:
       [Use *select* instead of *click*.]({{site.baseurl}}{{page.permalink}}user-interfaces/#select-vs-click)
 
 - section: UI terminology
-  topics:
+  sectionrules:
 
   - rule: |
 

@@ -1,8 +1,8 @@
 description: Guidelines about company-specific terminology.
 
-rules:
+content:
 - section: Branding
-  topics:
+  sectionrules:
 
   - rule: |
       ### Product names<br>
@@ -29,7 +29,7 @@ rules:
       [Don't use internal product codenames in public-facing documentation.]({{site.baseurl}}{{page.permalink}}company-terminology/#internal-vs-external-names)
 
 - section: Other terminology
-  topics:
+  sectionrules:
 
   - rule: |
       ### Failure isn't always bad<br>
