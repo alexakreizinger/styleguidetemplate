@@ -1,7 +1,7 @@
 # AK's Style Guide Template
 A style guide template that uses YAML files to single-source style rules across multiple audiences. For an example of its output, check out the [demo site](https://alexakreizinger.github.io/styleguidetemplate/) generated from this repository. 
 
-This template is a [Jekyll](https://jekyllrb.com/)-based framework that relies on vividh's [Liquify](https://github.com/vividh/liquify) plugin and the [Just the Docs](https://github.com/just-the-docs/just-the-docs) Jekyll theme (with some minor [customizations](#theme-and-branding-customization)).
+This template is a [Jekyll](https://jekyllrb.com/)-based framework that relies on vividh's [Liquify](https://github.com/vividh/liquify) plugin and the [Just the Docs](https://github.com/just-the-docs/just-the-docs) Jekyll theme (with some minor [customizations](#theming-and-site-customization)).
 
 > :bulb: The actual style rules and other content included in this template are merely placeholders—you can (and should!) override them with your organization's unique style guidelines. For more information, see [Add your own content](#add-your-own-content).
 
@@ -55,7 +55,7 @@ This template strikes a balance between the need to maintain discrete rulesets f
 As such, if you ever need to update a rule, you’d only need to edit the YAML file where the rule is single-sourced instead of painstakingly combing through three separate sections where it could ostensibly appear.
 
 ### How it works
-In a nutshell, this style guide template uses a combination of YAML files, Liquid variables, and Jekyll `include` tags to turn a collection of style rulesets into a mini database. Different pages of the [demo site](https://alexakreizinger.github.io/styleguidetemplate/) can then draw upon this database to fetch relevant rules.
+In a nutshell, this style guide template uses a combination of YAML files, Liquid variables, and Jekyll `include` tags to turn a collection of style rulesets into a mini database. Different pages of the style guide site can then draw upon this database to fetch relevant rules.
 
 The sequence of events is essentially as follows:
 
@@ -188,11 +188,7 @@ As you edit the local files in your cloned repo, you'll be able to view updates 
 ## Add your own content
 After you've [set up the scaffolding](#quickstart) for your style guide site, you can start adding your organization's specific style rules and overriding the placeholder content included in this template. 
 
-<details>
-<summary>
-
 ### Create and edit rules
-</summary>
 
 #### Add a new ruleset
 To add an entirely new ruleset file:
@@ -209,13 +205,8 @@ To edit an existing ruleset:
 2. Add, edit, or delete rules as needed. (See [`rule_template_generic.yml`](/_templates/rule_template_generic.yml) and [`rule_template_with_examples.yml`](/_templates/rule_template_with_examples.yml) for guidance.)
 
 There's no need to edit the audience pages where these rulesets appear; if everything is configured correctly, the changes you make to a ruleset file will automatically be reflected in any applicable pages. 
-</details>
-
-<details>
-<summary>
 
 ### Create and edit pages
-</summary>
 
 #### Add a new audience landing page
 
@@ -263,13 +254,8 @@ Under most circumstances, you shouldn't edit audience landing pages or audience 
 * If your Liquid formatting isn't working properly and you *do* need to edit an audience page directly, consult [`audience_landing_page_template.md`](/_templates/audience_landing_page_template.md) and [`audience_rule_page_template.md`](/_templates/audience_rule_page_template.md) for guidance.
 
 On the other hand, audience-agnostic pages (like [`general_principles.md`](/pages/general_principles.md)) don't use single-sourced data; you can edit these pages directly without issue.
-</details>
-
-<details>
-<summary>
 
 ### Create a new audience
-</summary>
 
 #### Name your audience
 
@@ -285,8 +271,6 @@ On the other hand, audience-agnostic pages (like [`general_principles.md`](/page
 (for applicable files)
 1. Decide which rulesets (if any) in `_data/stylerules` are relevant to your audience.
 2. [Edit existing ruleset files](#edit-an-existing-ruleset) to add new tags (using the [audience name](#name-your-audience) you chose earlier) to all of the existing rules that apply to your audience. <br>For example, a rule that currently has the key-value pair `audience: [tw, dev]` would be changed to `audience: [tw, dev, ux]`.
-
-</details>
 
 ([return to table of contents](#table-of-contents))
 
