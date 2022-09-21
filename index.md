@@ -5,7 +5,7 @@ permalink: /
 nav_order: 1
 ---
 # AK's Style Guide Template
-A Jekyll-based style guide template with single-sourcing across multiple audiences, built by [Alexa Kreizinger](https://alexakreizinger.com/).
+A Jekyll-based framework for building style guide sites with single-sourced rulesets across multiple audiences, built by [Alexa Kreizinger](https://alexakreizinger.com/) and distributed under the GNU General Public License.
 
 ## Why this exists
 Style guides are a must-have resource for any major organization—but what happens when you need to maintain multiple style guides for different audiences?
@@ -23,4 +23,4 @@ In a nutshell, this style guide template uses a combination of YAML files, Liqui
 Although I designed this template to include three audiences, seven YAML ruleset files, and two audience-agnostic pages, none of these are fixed traits. You can scale your own style guide site to encompass as much content and as many audiences as you need—and, crucially, scaling your style guide won't require you to dismantle and rebuild any content you've already added.
 
 ## Further reading
-For a more detailed overview, check out this repo's [readme file](https://github.com/alexakreizinger/styleguidetemplate#aks-style-guide-template).
+For a more detailed overview of how everything works and how to get started, check out this template's [readme file](https://github.com/alexakreizinger/styleguidetemplate#aks-style-guide-template) on GitHub.
