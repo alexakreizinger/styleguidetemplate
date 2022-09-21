@@ -22,5 +22,5 @@ In a nutshell, this style guide template uses a combination of YAML files, Liqui
 ## Scalability
 Although I designed this template to include three audiences, seven YAML ruleset files, and two audience-agnostic pages, none of these are fixed traits. You can scale your own style guide site to encompass as much content and as many audiences as you need—and, crucially, scaling your style guide won't require you to dismantle and rebuild any content you've already added.
 
-## Further reading
+## Learn more
 For a more detailed overview of how everything works and how to get started, check out this template's [readme file](https://github.com/alexakreizinger/styleguidetemplate#aks-style-guide-template) on GitHub.
