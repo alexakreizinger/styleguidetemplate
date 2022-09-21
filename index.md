@@ -5,7 +5,7 @@ permalink: /
 nav_order: 1
 ---
 # AK's Style Guide Template
-A Jekyll-based framework for building style guide sites with single-sourced rulesets across multiple audiences, built by [Alexa Kreizinger](https://alexakreizinger.com/) and distributed under the GNU General Public License.
+A Jekyll-based framework for building style guides that use single-sourced rulesets across multiple audiences, built by [Alexa Kreizinger](https://alexakreizinger.com/) and distributed under the GNU General Public License.
 
 ## Why this exists
 Style guides are a must-have resource for any major organization—but what happens when you need to maintain multiple style guides for different audiences?
