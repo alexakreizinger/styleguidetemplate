@@ -1,5 +1,5 @@
 # AK's Style Guide Template
-A Jekyll-based framework for building style guide sites with single-sourced rulesets across multiple audiences. For an example of its output, check out the [demo site](https://alexakreizinger.github.io/styleguidetemplate/) generated from this repository. 
+A Jekyll-based framework for building style guides that use single-sourced rulesets across multiple audiences. For an example of its output, check out the [demo site](https://alexakreizinger.github.io/styleguidetemplate/) generated from this repository. 
 
 This template relies on vividh's [Liquify](https://github.com/vividh/liquify) plugin and the [Just the Docs](https://github.com/just-the-docs/just-the-docs) Jekyll theme (with some minor [customizations](#theming-and-site-customization)).
 
