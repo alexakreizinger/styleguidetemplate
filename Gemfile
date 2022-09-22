@@ -1,15 +1,13 @@
 # frozen_string_literal: true
 source "https://rubygems.org"
 
-gem "jekyll"
+gem "jekyll", "4.2.2"
 gem "just-the-docs", "0.4.0.rc2"
-gem "jemoji" 
+gem "jemoji", "0.12.0" 
 
 group :jekyll_plugins do
-    gem 'liquify'
+    gem 'liquify', "0.2.7"
     gem 'jekyll-feed', '~> 0.12'
-    gem 'jekyll-remote-theme'
-    gem 'jekyll-sitemap'
-    gem 'jekyll-seo-tag'
+    gem 'jekyll-seo-tag', "2.8.0"
   end
 gem "webrick", "~> 1.7"
