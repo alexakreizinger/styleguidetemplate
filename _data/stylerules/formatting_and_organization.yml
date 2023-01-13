@@ -35,7 +35,7 @@ content:
       ### Aperture Science branding<br>
       Make sure to properly capitalize Aperture Science's product names.<br> 
 
-      For more information, see [Aperture Science's brand guidelines]({{site.baseurl}}/{{page.audience}}/company-terminology/#brand-guidelines).
+      For more information, see [Aperture Science's brand guidelines]({{site.baseurl}}/{{page.audience}}/company-terminology/#branding).
     audience: [tw, dev, mktg]
 
   - rule: |
